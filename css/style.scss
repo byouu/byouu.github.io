@@ -549,8 +549,6 @@ $ani-delay: 1s;
         width: 100%;
         margin: 3em auto;
         // border: thin solid red;
-        visibility: hidden;
-        cursor: none;
         h2{
             font-size: 1em;
             font-weight: 400;
@@ -627,10 +625,18 @@ $ani-delay: 1s;
                     margin-top: 8em;
                     flex-wrap: wrap;
                     .tech{
-                        margin-right: 1em;
-                        border: thin solid $dark1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 2em;
+                        // border: thin solid $dark1;
                         width: 4em;
                         height: 4em;
+                        img{
+                            width: 100%;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%) contrast(2);
+                        }
                     }
                 }
             }
@@ -646,12 +652,16 @@ $ani-delay: 1s;
                 width: 60%;
                 height: 25em;
                 background-color: $dark1;
-                padding: 2em 3em;
+                padding: 4em;
                 color: $light1;
                 h6{
                     font-size: 1em;
                     font-weight: 500;
                     letter-spacing: 0.05em;
+                    margin: 0;
+                }
+                .project-title-container{
+                    margin-bottom: 3em;
                 }
                 .full-website{
                     color: $light1;
@@ -714,15 +724,30 @@ $ani-delay: 1s;
                 display: flex;
                 h4{
                     margin-right: 1em;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 1em;
                 }
             }
             .text-container{
                 padding-left: 2em;
+                // display: flex;
+                // border: thin solid red;
                 .text-item{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
                     margin-bottom: 2em;
+                    justify-content: space-between;
                     h5{
                         margin-bottom: 0;
+                        width: 100%;
+                    }
+                }
+                .date{
+                    margin-right: 3em;
+                    p{
+                        margin: 0;
+                        font-weight: 300;
+                        font-size: 0.8em;
                     }
                 }
             }

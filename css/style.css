@@ -392,8 +392,6 @@ a {
           justify-content: space-between;
   width: 100%;
   margin: 3em auto;
-  visibility: hidden;
-  cursor: none;
 }
 
 .portfolio .portfolio-nav h2 {
@@ -507,10 +505,25 @@ a {
 }
 
 .portfolio .work-wrap .work-container .left-column .tech-list .tech {
-  margin-right: 1em;
-  border: thin solid #1D1B24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2em;
   width: 4em;
   height: 4em;
+}
+
+.portfolio .work-wrap .work-container .left-column .tech-list .tech img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) contrast(2);
 }
 
 .portfolio .work-wrap .description-wrap {
@@ -533,7 +546,7 @@ a {
   width: 60%;
   height: 25em;
   background-color: #1D1B24;
-  padding: 2em 3em;
+  padding: 4em;
   color: #ffff;
 }
 
@@ -541,6 +554,11 @@ a {
   font-size: 1em;
   font-weight: 500;
   letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.portfolio .work-wrap .description-wrap .description-container .project-title-container {
+  margin-bottom: 3em;
 }
 
 .portfolio .work-wrap .description-wrap .description-container .full-website {
@@ -621,7 +639,7 @@ a {
 
 .about .about-wrap .sub-section .title-container h4 {
   margin-right: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .about .about-wrap .sub-section .text-container {
@@ -629,11 +647,33 @@ a {
 }
 
 .about .about-wrap .sub-section .text-container .text-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about .about-wrap .sub-section .text-container .text-item h5 {
   margin-bottom: 0;
+  width: 100%;
+}
+
+.about .about-wrap .sub-section .text-container .date {
+  margin-right: 3em;
+}
+
+.about .about-wrap .sub-section .text-container .date p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.8em;
 }
 
 .about .about-wrap .col-2 {
