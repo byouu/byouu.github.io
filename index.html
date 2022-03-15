@@ -4,284 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brad Young</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/home/favicon.ico"/>
     <!-- Normalise -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="home.init.init();">
     <div class="wrap">
-        <!-- <div class="nav">
+        <nav class="nav">
             <div class="nav-bar">
+                <div class="nav-logo">
+                    <a href="/">
+                        <div class="nav-logo-container">
+                            <img src="/images/logo.svg" alt="logo">
+                        </div>
+                    </a>
+                </div>
                 <ul class="nav-list">
-                    <li class="nav-item active"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">Portfolio</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Skills</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#"><h3>Home</h3></a></li>
+                    <li class="nav-item"><a href="#"><h3>About</h3></a></li>
+                    <li class="nav-item"><a href="#"><h3>Projects</h3></a></li>
+                    <li class="nav-item"><a href="#"><h3>Contact</h3></a></li>
                 </ul>
-                <div class="social-link-container">
-                    <div class="social-link">
-                        <a href="https://www.linkedin.com/in/bradley-young-56bbb218a/"><i class="fab fa-linkedin-in"></i></a>                    
-                    </div>
-                    <div class="social-link">
-                        <a href="https://github.com/byouu"><i class="fab fa-github"></i></a>                        
-                    </div>
-                </div>
             </div>
-        </div> -->
-
+        </nav>
+        
         <div class="section home">
-            <div class="home-title">
-                <div class="h1-container">
-                    <h1 class="main-text">Brad<br>Young</h1>
-                    <h1 class="outline-text">Brad<br>Young</h1>
+            <div class="home-logo-card">
+                <div class="logo-container">
+                    <img src="images/logo-white.svg" alt="logo">
                 </div>
-                <h3>Web Dev<span class="spacer">><</span>Designer</h3>
-                <div class="colour-block"></div>
+                <div class="red-block"></div>
             </div>
-            <!-- left shapes-->
-            <div class="top-left-box outline-shape background-shape"></div>
-            <div class="top-left-box-2 fill-shape background-shape"></div>
+            <div class="home-title-card">
+                <div class="home-title">
+                    <div class="h1-container">
+                        <h1 class="main-text">Brad<br>Young</h1>
+                        <h1 class="outline-text">Brad<br>Young</h1>
+                    </div>
+                    <h3>Web Dev<span class="spacer">><</span>Designer</h3>
+                    <!-- <div class="colour-block"></div> -->
+                </div>
+                <div class="background-shapes">
+                    <!-- left shapes-->
+                    <div class="top-left-box fill-shape background-shape"></div>
+                    <div class="top-left-box-2 fill-shape-red background-shape"></div>
+                    <div class="mid-left-box fill-shape background-shape"></div>
+                    <div class="mid-left-box-2 fill-shape background-shape"></div>
+                    <div class="bot-left-box fill-shape-red background-shape"></div>
+                    <div class="bot-left-text-2 background-text"><h6>UI/UX</div>
+                    <!-- center shapes -->
+                    <div class="bot-mid-box outline-shape background-shape"></div>
+                    <div class="mid-right-text background-text vert-text"><h6>Blender</h6></div>
+                    <!-- right shapes -->
+                    <div class="top-right-text background-text vert-text"><h6>Figma</h6></div>
+                    <div class="top-right-line fill-shape background-shape"></div>
+                    <div class="top-right-line-2 outline-shape background-shape"></div>
+                    <div class="top-left-text background-text"><div class="text-line-arrow">
+                        <h6>Digitial Design</h6><span>>></span>
+                    </div><h6>PS AI AE</h6></div>
+                    <div class="bot-right-box-2 background-shape color-scheme">
+                        <div class="fill-shape color-scheme-shape"></div>
+                        <div class="outline-fill-shape-red color-scheme-shape"></div>
+                        <div class="outline-shape color-scheme-shape"></div>
+                    </div>
+                    <div class="bot-right-text background-text"><h6>'99</h6></div>
+                </div>
+                <!-- Down Arrow -->
+                <div id="down-arrow">
+                    <div class="arrow-wrap">
+                        <div class="arrow arrow-first"></div>
+                        <div class="arrow arrow-second"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="mid-left-box fill-shape background-shape"></div>
-            <div class="mid-left-box-2 fill-shape background-shape"></div>
-
-            <div class="bot-left-box outline-shape background-shape"></div>
-            <div class="bot-left-text background-text vert-text"><h5>Front end</h5><h5>React</h5></div>
-            <div class="bot-left-text-2 background-text"><h5>WP</h5>>></div>
-
-            <!-- center shapes -->
-            <div class="top-mid-box outline-shape background-shape"></div>
-
-            <div class="bot-mid-box outline-shape background-shape"></div>
-
-            <!-- right shapes -->
-            <div class="top-right-line fill-shape background-shape"></div>
-            <div class="top-right-text background-text"><div class="text-line-arrow">
-                <h5>Digitial Design</h5><span>>></span>
-            </div><h5>PS AI AE</h5></div>
-
-            <div class="bot-right-box fill-shape background-shape"></div>
-            <div class="bot-right-box-2 outline-shape background-shape"></div>
-            <div class="bot-right-box-3 outline-shape background-shape"></div>
-            <div class="bot-right-text background-text"><h5>Brad Young</h5></div>
-
-
-            <!-- Down Arrow -->
-            <div id="down-arrow">
-                <div class="arrow-wrap">
-                    <div class="arrow arrow-first"></div>
-                    <div class="arrow arrow-second"></div>
+        <div class="section about" id="about">
+            <div class="about-wrap section-wrap">
+                <div class="about-content">
+                    <h2 class="section-header">About Me</h2>
+                    <div class="about-text">
+                        <h3>Hey!</h3>
+                        <p>I'm Brad, a designer and front-end developer passionate about creating exciting and valuable experiences for users and businesses.
+                        </p>
+                        <p>With a BSc in computer science and a diploma in web development and UI/UX, product design has combined my technical knowledge and my passion for being creative.
+                        </p>
+                        <p>From drawing digital art, 3D modelling, video editing or graphic design, I enjoy the challenge of learning new techniques to create.</p>
+                    </div>
+                    <div class="me">
+                        <img src="/images/home/me.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="background-shapes">
+                <!-- left shapes-->
+                <div class="mid-left-box fill-shape background-shape"></div>
+                <div class="mid-left-box-2 fill-shape background-shape"></div>
+                <div class="bot-left-box fill-shape-red background-shape"></div>
+                <div class="bot-left-text-2 background-text"><h6>UI/UX</div>
+                <!-- center shapes -->
+                <div class="bot-mid-box outline-shape background-shape"></div>
+                <div class="mid-right-text background-text vert-text"><h6>Blender</h6></div>
+                <!-- right shapes -->
+                <div class="top-right-text background-text vert-text"><h6>Figma</h6></div>
+                <div class="top-right-line fill-shape background-shape"></div>
+                <div class="top-right-line-2 outline-shape background-shape"></div>
+                <div class="top-left-text background-text"><div class="text-line-arrow">
+                    <h6>Digitial Design</h6><span>>></span>
+                </div><h6>PS AI AE</h6></div>
+                <div class="bot-right-box-2 background-shape color-scheme">
+                    <div class="fill-shape color-scheme-shape"></div>
+                    <div class="outline-fill-shape-red color-scheme-shape"></div>
+                    <div class="outline-shape color-scheme-shape"></div>
+                </div>
+                <div class="bot-right-text background-text"><h6>'99</h6></div>
+            </div>
+        </div>
+        
+        <div class="section cv">
+            <div class="cv-wrap section-wrap">
+                <div class="cv-content">
+                    <div class="first-column">
+                        <div class="cv-text-container">
+                            <div class="cv-text-title-container">
+                                <h3>Experience</h3>
+                                <div class="title-divider"></div>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>CreateBase</h4>
+                                    <h5>2020 >> Present</h5>
+                                </div>
+                                <p>UI/UX designer/Web developer</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Just Hockey & Cricket Express</h4>
+                                    <h5>2017 >> 2021</h5>
+                                </div>
+                                <p>Website management/Retail assistant</p>
+                            </div>
+                        </div>
+                        <div class="cv-text-container">
+                            <div class="cv-text-title-container">
+                                <h3>Education</h3>
+                                <div class="title-divider"></div>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Yoobee Colleges</h4>
+                                    <h5>2020 >> 2021</h5>
+                                </div>
+                                <p>Diploma in Web and UX Design</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>University of Auckland</h4>
+                                    <h5>2017 >> 2019</h5>
+                                </div>
+                                <p>Bachelor of Science - Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-column">
+                        <div class="cv-text-container">
+                            <div class="cv-text-title-container">
+                                <h3>Achievements</h3>
+                                <div class="title-divider"></div>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Red Bull Basement University</h4>
+                                    <h5>>> 2020</h5>
+                                </div>
+                                <p>CreateBase #1 New Zealand - University Startup competition</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Velocity 100k Challenge</h4>
+                                    <h5>>> 2020</h5>
+                                </div>
+                                <p>Finalist - Top 15 out of 90</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>University of Auckland</h4>
+                                    <h5>>> 2019</h5>
+                                </div>
+                                <p>Finalist - Design a shirt competition</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Oliver Lee Publications</h4>
+                                    <h5>>> 2016</h5>
+                                </div>
+                                <p>Winner - Leaving School Magazine Cover Competition</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Velocity 100k Challenge</h4>
+                                    <h5>>> 2020</h5>
+                                </div>
+                                <p>Finalist - Top 15 out of 90</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Kinjaz</h4>
+                                    <h5>>> 2016</h5>
+                                </div>
+                                <p>Winner - Kinjaz Dojo Art Competition</p>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-sub-title-container">
+                                    <h4>Botany Downs Secondary College</h4>
+                                    <h5>>> 2016</h5>
+                                </div>
+                                <p>Designer of the year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-column">
+                        <div class="cv-text-container">
+                            <div class="cv-text-title-container">
+                                <h3>Skills</h3>
+                                <div class="title-divider"></div>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <div class="cv-skill-container">
+                                    <div class="cv-skill-title-container">
+                                        <h5>Interaction</h5>
+                                    </div>
+                                    <p>Wireframing, Prototyping
+                                        User Testing, User Research,
+                                        Rapid Prototyping</p>
+                                </div>
+                                <div class="cv-skill-container">
+                                    <div class="cv-skill-title-container">
+                                        <h5>Visual</h5>
+                                    </div>
+                                    <p>Illustration & Graphics, Drawing/Sketching, 3D modeling, Animation, Photo/Video editing</p>
+                                </div>
+                                <div class="cv-skill-container">
+                                    <div class="cv-skill-title-container">
+                                        <h5>Coding</h5>
+                                    </div>
+                                    <p>HTML, CSS, JavaScript, Git, SCSS, Agile methodology</p>
+                                </div>
+                                <div class="cv-skill-container">
+                                    <div class="cv-skill-title-container">
+                                        <h5>Experience in</h5>
+                                    </div>
+                                    <p>React, Typescript, NextJs, Wordpress, PHP, Python, SQL, Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv-text-container">
+                            <div class="cv-text-title-container">
+                                <h3>Tools</h3>
+                                <div class="title-divider"></div>
+                            </div>
+                            <div class="cv-text-content-container">
+                                <p>Figma, Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Blender, Unity, VS code</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="section portfolio">
-            <div class="portfolio-wrap">
-                <div class="portfolio-nav">
-                    <div class="left-nav">
-                        <div class="hoz-line"></div>
-                        <h2>Previous</h2>
-                    </div>
-                    <div class="right-nav">
-                        <h2>Next</h2>
-                        <div class="hoz-line"></div>
-                    </div>
-                </div>
-                <div class="work-wrap">
-                    <div class="work-container">
-                        <div class="left-column">
-                            <h1>Createbase</h1>
-                            <div class="work-1 example">
-                                <div class="desktop-showcase">
-                                    <img src="images/cb-desktop.png" alt="example website">
-                                </div>
-                                <div class="mobile-showcase">
-                                    <img src="images/cb-mobile.png" alt="cb">
-                                </div>
-                            </div>
-                            <div class="tech-list">
-                                <div class="tech">
-                                    <img src="images/html.png" alt="">
-                                </div>
-                                <div class="tech">
-                                    <img src="images/css.png" alt="css">
-                                </div>
-                                <div class="tech">
-                                    <img src="images/mongodb-logo.png" alt="mongodb">
-                                </div>
-                                <div class="tech">
-                                    <img src="images/node.png" alt="node">
-                                </div>
-                                <div class="tech">
-                                    <img src="images/express.png" alt="express">
-                                </div>
-                                <div class="tech">
-                                    <img src="images/aws.png" alt="aws">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-wrap">
-                        <div class="description-container">
+            <div class="portfolio-wrap section-wrap">
+                <h2 class="section-header">Projects</h2>
+                <h3 class="section-sub-header">Check out a collection of my work</h3>
+                <div class="portfolio-content-container">
+                    <div class="project-grid">
+                        <div class="project-grid-item">
+                            <img src="/images/home/cb.jpg" alt="CreateBase">
                             <div class="project-title-container">
-                                <h6>Createbase</h6>
-                                <p>CreateBase is a startup with the goal of becoming a trailblazer in the technology-education industry, known for providing practical & engaging learning experiences. CreateBase develops Educational Tools and Contents whilst leveraging 3D Printing technology.</p>
+                                <h3 class="project-num">01</h3>
+                                <h3 class="project-title">CreateBase Website and Platform</h3>
                             </div>
-                            <div class="role-container">
-                                <h6>Role</h6>
-                                <p>Web development - Front End & Back End</p>
-                                <p>Digital & Product Designer</p>
-                            </div>
-                            <div class="full-website">
-                                <a href="https://createbase.co.nz/">
-                                    <div class="hoz-line"></div>
-                                    <h5>Full Website</h5>
+                            <p class="project-description">Design, wireframes, testing and front end development of the CreateBase webite and online platform which lead to 200+ active users spread throughout schools in NZ, AUS and the UK in the first 2 months of release.</p>
+                            <button class="project-btn">
+                                <a href="/project-cb.html">
+                                    <p>View Case Study</p>
                                 </a>
+                            </button>
+                        </div>
+                        <div class="project-grid-item">
+                            <img src="/images/home/atler.jpg" alt="CreateBase">
+                            <div class="project-title-container">
+                                <h3 class="project-num">02</h3>
+                                <h3 class="project-title">Alter App</h3>
                             </div>
+                            <p class="project-description">This Yoobee Project was completed simulating an app launch of a new and exciting app. Alter was a product of 3 weeks of collaboration. </p>
+                            <button class="project-btn">
+                                <p>View Case Study</p>
+                            </button>
+                        </div>
+                        <div class="project-grid-item">
+                            <img src="/images/home/visionx.jpg" alt="CreateBase">
+                            <div class="project-title-container">
+                                <h3 class="project-num">03</h3>
+                                <h3 class="project-title">VisionX Website</h3>
+                            </div>
+                            <p class="project-description">Website update, aiming to modernise and match the new business identity.</p>
+                            <button class="project-btn">
+                                <p>View Case Study</p>
+                            </button>
+                        </div>
+                        <div class="project-grid-item">
+                            <img src="/images/home/cb.jpg" alt="CreateBase">
+                            <div class="project-title-container">
+                                <h3 class="project-num">04</h3>
+                                <h3 class="project-title">Dreamloadout.gg</h3>
+                            </div>
+                            <p class="project-description">A website for the game Valorant for users to easily view their in-game loadout, cost of items and share sets of skins.</p>
+                            <button class="project-btn">
+                                <p>View</p>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="section about">
-            <h1 class="section-header">About Me</h1>
-            <div class="about-wrap">
-                <div class="col-1">
-                    <!-- <div class="about-me sub-section">
-                        <div class="sub-section-text">
-                            <div class="title-container">
-                                <h4>01</h4>
-                                <h4>About Me</h4>
-                            </div>
-                            <div class="text-container">
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="education-me sub-section">
-                        <div class="sub-section-text">
-                            <div class="title-container">
-                                <h4>01</h4>
-                                <h4>Education</h4>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Yoobee Colleges</h5>
-                                    <p>Diploma - Web and UX Design</p>
-                                    <div class="date">
-                                        <p>>> 2020</p>
-                                    </div>
-                                </div>
-                                <div class="text-item">
-                                    <h5>University of Auckland</h5>
-                                    <p>BSc - Computer Science</p>
-                                    <div class="date">
-                                        <p>2017 >> 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-me sub-section">
-                        <div class="sub-section-text">
-                            <div class="title-container">
-                                <h4>02</h4>
-                                <h4>Skills</h4>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Front End Development</h5>
-                                    <p>HTML, CSS, Javascript, Jquery, React, Wordpress, Figma, Sketch</p>
-                                </div>
-                                <div class="text-item">
-                                    <h5>Software Development</h5>
-                                    <p>Python, Java, SQL</p>
-                                </div>
-                                <div class="text-item">
-                                    <h5>Design</h5>
-                                    <p>Photoshop, Illustrator, After Effects</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <!-- <div class="dp-container">
-                        <img src="images/brad.jpg" alt="me">
-                    </div> -->
-                    <div class="achivements-me sub-section">
-                        <div class="sub-section-text">
-                            <div class="title-container">
-                                <h4>03</h4>
-                                <h4>Achievements</h4>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Red Bull Basement University</h5>
-                                    <p>#1 New Zealannd - University Startup competition</p>
-                                    <div class="date">
-                                        <p>>> 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Velocity 100k Challenge</h5>
-                                    <p>Finalist - Top 15 out of 90</p>
-                                    <div class="date">
-                                        <p>>> 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>University of Auckland</h5>
-                                    <p>Finalist - Design a shirt competition</p>
-                                    <div class="date">
-                                        <p>>> 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Oliver Lee Publications</h5>
-                                    <p>Winner - Leaving School Magazine Cover Competition</p>
-                                    <div class="date">
-                                        <p>>> 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>Kinjaz</h5>
-                                    <p>Winner - Kinjaz Dojo Art Compeition</p>
-                                    <div class="date">
-                                        <p>>> 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <div class="text-item">
-                                    <h5>BDSC</h5>
-                                    <p>Winner - Designer of the year</p>
-                                    <div class="date">
-                                        <p>>> 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="lets-talk-btn">
+                    <p>Got a project? Let's talk</p>
+                </button>
             </div>
         </div>
 
@@ -302,40 +360,28 @@
             </div>
             <div class="background-shapes">
                 <!-- left shapes-->
-                <div class="top-left-box outline-shape background-shape"></div>
-                <div class="top-left-box-2 fill-shape background-shape"></div>
-    
+                <div class="top-left-box fill-shape background-shape"></div>
+                <div class="top-left-box-2 fill-shape-red background-shape"></div>
                 <div class="mid-left-box fill-shape background-shape"></div>
                 <div class="mid-left-box-2 fill-shape background-shape"></div>
-    
-                <div class="bot-left-box outline-shape background-shape"></div>
-                <div class="bot-left-text background-text vert-text"><h5>Front end</h5><h5>React</h5></div>
-                <div class="bot-left-text-2 background-text"><h5>WP</h5>>></div>
-    
+                <div class="bot-left-box fill-shape-red background-shape"></div>
+                <div class="bot-left-text-2 background-text"><h6>UI/UX</div>
                 <!-- center shapes -->
-                <div class="top-mid-box outline-shape background-shape"></div>
-    
                 <div class="bot-mid-box outline-shape background-shape"></div>
-    
+                <div class="mid-right-text background-text vert-text"><h6>Blender</h6></div>
                 <!-- right shapes -->
+                <div class="top-right-text background-text vert-text"><h6>Figma</h6></div>
                 <div class="top-right-line fill-shape background-shape"></div>
-                <div class="top-right-text background-text"><div class="text-line-arrow">
-                    <h5>Digitial Design</h5><span>>></span>
-                </div><h5>PS AI AE</h5></div>
-    
-                <div class="bot-right-box fill-shape background-shape"></div>
-                <div class="bot-right-box-2 outline-shape background-shape"></div>
-                <div class="bot-right-box-3 outline-shape background-shape"></div>
-                <div class="bot-right-text background-text"><h5>Brad Young</h5></div>
-    
-    
-                <!-- Down Arrow -->
-                <div id="up-arrow">
-                    <div class="arrow-wrap">
-                        <div class="arrow arrow-first"></div>
-                        <div class="arrow arrow-second"></div>
-                    </div>
+                <div class="top-right-line-2 outline-shape background-shape"></div>
+                <div class="top-left-text background-text"><div class="text-line-arrow">
+                    <h6>Digitial Design</h6><span>>></span>
+                </div><h6>PS AI AE</h6></div>
+                <div class="bot-right-box-2 background-shape color-scheme">
+                    <div class="fill-shape color-scheme-shape"></div>
+                    <div class="outline-fill-shape-red color-scheme-shape"></div>
+                    <div class="outline-shape color-scheme-shape"></div>
                 </div>
+                <div class="bot-right-text background-text"><h6>'99</h6></div>
             </div>
         </div>
     </div>

@@ -1,24 +1,52 @@
-// window.onbeforeunload = function () { window.scrollTo(0,0); };
+// ==================================================================
+// VARIABLES
+// ==================================================================
 
-// Banner button scroll
-var scrollBtn = document.querySelector('#down-arrow');
-var scrollBtnBottom = document.querySelector('#up-arrow');
+let home = {
+	init: {
+		attachListeners: undefined,
+		init: undefined,
+	},
 
-function scrollDown(){
-    document.querySelector('.portfolio').scrollIntoView({behavior: "smooth", block: "center"});
+	elem: {
+        scrollBtn: document.querySelector('#down-arrow'),
+        scrollBtnBottom: document.querySelector('#up-arrow'),
+        about: document.querySelector('.about'),
+        portfolioPreview: document.querySelector('.portfolio'),
+
+	},
+
+	event: {
+        // Scroll Buttons
+		scrollDown: undefined,
+		scrollUp: undefined,
+	},
+};
+
+// ==================================================================
+// FUNCTIONS
+// ==================================================================
+
+// @func  home.initialise
+// @desc
+home.init.init = () => {
+	home.init.attachListeners();
+	// home.sections.forEach((section) => {
+	// 	home.sectionPos.push(section.offsetTop);
+	// });
+};
+
+home.init.attachListeners = () => {
+    home.elem.scrollBtn.addEventListener("click", home.event.scrollDown);
+    home.elem.scrollBtnBottom.addEventListener("click", home.event.scrollUp);
+};
+
+home.event.scrollDown = () => {
+    home.elem.about.scrollIntoView({behavior: "smooth", block: "center"});
 }
-
-scrollBtn.addEventListener('click', function(){
-    scrollDown();
-});
-
-function scrollUp(){
+home.event.scrollUp = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
-
-scrollBtnBottom.addEventListener('click', function(){
-    scrollUp();
-});
 
 // Nav menu
 
@@ -63,7 +91,3 @@ scrollBtnBottom.addEventListener('click', function(){
 
 //   console.log(scrollpos)
 // })
-
-var position = document.querySelector('.portfolio').scrollTop;
-console.log(position)
-
