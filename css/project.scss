@@ -1,0 +1,35 @@
+@import "global.scss";
+
+.project{
+    border: thin solid red;
+    padding-top: 10rem;
+}
+
+.project-title{
+    display: flex;
+}
+
+.project-num{
+    position: relative;
+    border: thin solid red;
+    width: 5rem;
+    .box{
+        position: absolute;
+        border: 0.2rem solid $gray;
+        height: 3rem;
+        width: 3rem;
+    }
+    .small-box{
+        position: absolute;
+        background-color: $red;
+        height: 2rem;
+        width: 2rem;
+    }
+    .num{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+}
