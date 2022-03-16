@@ -1,29 +1,47 @@
 @import "global.scss";
 
 .project{
-    border: thin solid red;
-    padding-top: 10rem;
+    padding-top: 7rem;
+}
+
+.project-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-title{
     display: flex;
+    width: 100%;
+    max-width: 60rem;
+    h1{
+        font-size: 3rem;
+        padding: 0 0 0 2rem;
+        width: 100%;
+    }
+}
+
+.content-wrap{
+    width: 100%;
+    max-width: 60rem;
 }
 
 .project-num{
     position: relative;
-    border: thin solid red;
     width: 5rem;
     .box{
         position: absolute;
         border: 0.2rem solid $gray;
-        height: 3rem;
-        width: 3rem;
+        height: 4rem;
+        width: 4rem;
+        z-index: 8;
     }
     .small-box{
         position: absolute;
         background-color: $red;
         height: 2rem;
         width: 2rem;
+        z-index: 9;
     }
     .num{
         position: absolute;
@@ -31,5 +49,106 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        font-size: 2rem;
     }
+}
+
+.main-content{
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        video{
+            width: 100%;
+        }
+    }
+}
+
+.text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+}
+
+.main-details{
+    display: flex;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    justify-content: center;
+    border-top: thin solid $gray;
+    border-bottom: thin solid $gray;
+    width: 100%;
+    .main-details-container{
+        flex: 1 0 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        h4{
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.text-section{
+    padding: 2rem 0;
+    width: 100%;
+    .title{
+        padding-bottom: 1rem;
+    }
+    p{
+        padding: 1rem 0;
+    }
+    img{
+        width: 100%;
+    }
+    // .sub-title{
+    //     font-weight: 700;
+    // }
+    h4{
+        padding-bottom: 1rem;
+    }
+    .sub-text-container{
+        padding-bottom: 2rem;
+    }
+    ul{
+        padding: 1rem 0rem 2rem 1rem;
+        li{
+            display: flex;
+            align-items: flex-start;
+            p{
+                padding: 0 0 0 1rem;
+            }
+        }
+    }
+    .box{
+        background-color: $red;
+        margin-top: 0.8rem;
+        height: 0.5rem;
+        width: 0.5rem;
+    }
+}
+
+.linkBtn{
+    margin: 4rem 0;
+}
+
+.goals{
+    .title{
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 786px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
 }

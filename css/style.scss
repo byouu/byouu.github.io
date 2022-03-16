@@ -1,5 +1,9 @@
 @import "global.scss";
 
+.wrap{
+    position: relative;
+}
+
 .background-shape, .background-text{
     position: absolute;
 }
@@ -135,7 +139,7 @@ $ani-speed: 2s;
 $ani-delay: 1s;
 
 nav{
-    display: none !important;
+    display: none;
 }
 
 #down-arrow{
@@ -304,8 +308,8 @@ nav{
 }
 
 .cv{
-    .cv-wrap{
-    }
+    // .cv-wrap{
+    // }
     .cv-text-container{
         padding-bottom: 2rem;
     }
@@ -551,13 +555,16 @@ nav{
                 padding: 1rem 0;
             }
         }
+        // .me{
+        //     display: block;
+        //     width: 50%;
+        //     padding: 0 3rem;
+        //     img{
+        //         max-width: 20rem;
+        //     }
+        // }
         .me{
-            display: block;
-            width: 50%;
-            padding: 0 3rem;
-            img{
-                max-width: 20rem;
-            }
+            display: none;
         }
     }
 

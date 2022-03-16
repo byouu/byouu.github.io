@@ -20,7 +20,7 @@
 </head>
 <body onload="home.init.init();">
     <div class="wrap">
-        <nav class="nav">
+        <nav class="nav hide" id="nav">
             <div class="nav-bar">
                 <div class="nav-logo">
                     <a href="/">
@@ -30,10 +30,28 @@
                     </a>
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#"><h3>Home</h3></a></li>
-                    <li class="nav-item"><a href="#"><h3>About</h3></a></li>
-                    <li class="nav-item"><a href="#"><h3>Projects</h3></a></li>
-                    <li class="nav-item"><a href="#"><h3>Contact</h3></a></li>
+                    <li class="nav-item"><a href="/"><h3>Home</h3></a></li>
+                    <li class="nav-item"><a href="/#about"><h3>About</h3></a></li>
+                    <li class="nav-item dropdown">
+                        <a href="/#projects">
+                            <h3 class="active">Projects</h3>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="/project-cb.html">
+                                <h3>CreateBase</h3>
+                            </a>
+                            <a href="/alter.html">
+                                <h3>Alter</h3>
+                            </a>
+                            <a href="/visionx.html">
+                                <h3>VisionX</h3>
+                            </a>
+                            <!-- <a href="/dreamloadout.html">
+                                <h3>Dreamloadout</h3>
+                            </a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/#contact"><h3>Contact</h3></a></li>
                 </ul>
             </div>
         </nav>
@@ -99,7 +117,7 @@
                         </p>
                         <p>With a BSc in computer science and a diploma in web development and UI/UX, product design has combined my technical knowledge and my passion for being creative.
                         </p>
-                        <p>From drawing digital art, 3D modelling, video editing or graphic design, I enjoy the challenge of learning new techniques to create.</p>
+                        <p>From drawing digital art, 3D modelling, video editing, graphic design or learning to sew, I enjoy the challenge of learning new techniques to create.</p>
                     </div>
                     <div class="me">
                         <img src="/images/home/me.jpg" alt="">
@@ -282,7 +300,7 @@
             </div>
         </div>
         
-        <div class="section portfolio">
+        <div class="section portfolio"  id="projects">
             <div class="portfolio-wrap section-wrap">
                 <h2 class="section-header">Projects</h2>
                 <h3 class="section-sub-header">Check out a collection of my work</h3>
@@ -309,7 +327,9 @@
                             </div>
                             <p class="project-description">This Yoobee Project was completed simulating an app launch of a new and exciting app. Alter was a product of 3 weeks of collaboration. </p>
                             <button class="project-btn">
-                                <p>View Case Study</p>
+                                <a href="/alter.html">
+                                    <p>View</p>
+                                </a>
                             </button>
                         </div>
                         <div class="project-grid-item">
@@ -320,10 +340,12 @@
                             </div>
                             <p class="project-description">Website update, aiming to modernise and match the new business identity.</p>
                             <button class="project-btn">
-                                <p>View Case Study</p>
+                                <a href="/visionx.html">
+                                    <p>View</p>
+                                </a>
                             </button>
                         </div>
-                        <div class="project-grid-item">
+                        <!-- <div class="project-grid-item">
                             <img src="/images/home/cb.jpg" alt="CreateBase">
                             <div class="project-title-container">
                                 <h3 class="project-num">04</h3>
@@ -331,9 +353,11 @@
                             </div>
                             <p class="project-description">A website for the game Valorant for users to easily view their in-game loadout, cost of items and share sets of skins.</p>
                             <button class="project-btn">
-                                <p>View</p>
+                                <a href="">
+                                    <p>View</p>
+                                </a>
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -343,7 +367,7 @@
             </div>
         </div>
 
-        <div class="section contact">
+        <div class="section contact" id="contact">
             <div class="contact-wrap">
                 <div class="contact-text">
                     <div class="title-container">

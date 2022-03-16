@@ -33,6 +33,10 @@ nav {
   top: 2rem;
   left: 0;
   width: 100%;
+  z-index: 999;
+  opacity: 100%;
+  -webkit-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s;
 }
 
 .nav-bar {
@@ -47,6 +51,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
 }
 
 .nav-list {
@@ -76,7 +81,11 @@ nav {
   transition: color ease 0.3s;
 }
 
-.nav-item h3:hover {
+.nav-item a {
+  padding: 1rem 3rem;
+}
+
+.nav-item:hover h3 {
   color: #171433;
 }
 
@@ -88,6 +97,53 @@ nav {
 
 .nav-logo-container img {
   height: 3rem;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  top: 5rem;
+  -webkit-transition: visibility ease 0.3s, opacity ease 0.3s;
+  transition: visibility ease 0.3s, opacity ease 0.3s;
+  width: 100%;
+}
+
+.dropdown .dropdown-menu a {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown .dropdown-menu a h3 {
+  padding: 2rem 0;
+  border: thin solid #CDCDCD;
+  width: 100%;
+  background-color: white;
+}
+
+.dropdown .dropdown-menu a h3:hover {
+  color: #CE5F15;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 100%;
+  visibility: visible;
+}
+
+.active {
+  color: #171433 !important;
 }
 
 .section {
@@ -138,6 +194,29 @@ a {
   text-decoration: none;
 }
 
+.linkBtn {
+  background-color: #171433;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  -webkit-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
+  cursor: pointer;
+}
+
+.linkBtn p {
+  color: white;
+  font-weight: 500;
+}
+
+.linkBtn:hover {
+  background-color: #CE5F15;
+}
+
 .spacer {
   padding: 0 1em;
   position: relative;
@@ -176,12 +255,50 @@ a {
   background-color: #CE5F15;
 }
 
+.side-menu {
+  display: none;
+}
+
 @media only screen and (min-width: 786px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .section-wrap {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-wrap {
+    padding: 5rem 10rem;
+  }
+  .side-menu {
+    position: fixed;
+    display: block;
+    left: 5vw;
+    top: 15rem;
+  }
+  .side-menu h3 {
+    padding-bottom: 2rem;
+    line-height: 150%;
+    color: #CDCDCD;
+  }
+  .side-menu .active {
+    color: #171433;
+  }
+  .side-menu .side-menu-text {
+    -webkit-transition: color ease 0.3s;
+    transition: color ease 0.3s;
+  }
+  .side-menu .side-menu-text:hover {
+    color: #171433;
+  }
+}
+
+.wrap {
+  position: relative;
 }
 
 .background-shape, .background-text {
@@ -343,7 +460,7 @@ a {
 }
 
 nav {
-  display: none !important;
+  display: none;
 }
 
 #down-arrow {
@@ -862,12 +979,7 @@ nav {
     padding: 1rem 0;
   }
   .about .me {
-    display: block;
-    width: 50%;
-    padding: 0 3rem;
-  }
-  .about .me img {
-    max-width: 20rem;
+    display: none;
   }
   .portfolio .portfolio-wrap {
     margin: 0;

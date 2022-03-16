@@ -18,8 +18,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/project.css">
 </head>
-<!-- <body onload="cb.init.init();"> -->
-<body>
+<body onload="cb.init.init();">
     <div class="wrap">
         <nav class="nav">
             <div class="nav-bar">
@@ -33,14 +32,46 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="/"><h3>Home</h3></a></li>
                     <li class="nav-item"><a href="/#about"><h3>About</h3></a></li>
-                    <li class="nav-item"><a href="#"><h3>Projects</h3></a></li>
-                    <li class="nav-item"><a href="#"><h3>Contact</h3></a></li>
+                    <li class="nav-item dropdown">
+                        <a href="/#projects">
+                            <h3 class="active">Projects</h3>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="/project-cb.html">
+                                <h3>CreateBase</h3>
+                            </a>
+                            <a href="/alter.html">
+                                <h3>Alter</h3>
+                            </a>
+                            <a href="/visionx.html">
+                                <h3>VisionX</h3>
+                            </a>
+                            <!-- <a href="/dreamloadout.html">
+                                <h3>Dreamloadout</h3>
+                            </a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/#contact"><h3>Contact</h3></a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="section project">
-            <div class="project-wrap section-wrap">
+            <div id="" class="project-wrap section-wrap">
+                <ul class="side-menu">
+                    <li id="websiteBtn">
+                        <h3 class="side-menu-text active">Website</h3>
+                    </li>
+                    <li id="platformBtn">
+                        <h3 class="side-menu-text">Platform</h3>
+                    </li>
+                    <li id="brandingBtn">
+                        <h3 class="side-menu-text">Branding</h3>
+                    </li>
+                    <li id="3dBtn">
+                        <h3 class="side-menu-text">3D Modeling <br>& animation</h3>
+                    </li>
+                </ul>
                 <div class="project-title">
                     <div class="project-num">
                         <div class="box"></div>
@@ -49,11 +80,215 @@
                     </div>
                     <h1>Createbase</h1>
                 </div>
+                <div id="website" class="content-wrap">
+                    <div class="main-content">
+                        <div class="main-img">
+                            <a href="https://createbase.co.nz/"><img src="/images/home/cbwebsite.jpg" alt="CreateBase"></a>
+                        </div>
+    
+                        <div class="text-wrap">
+                            <div class="main-details">
+                                <div class="main-details-container">
+                                    <h4>Timeline</h4>
+                                    <p>2.5 weeks</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>Platform</h4>
+                                    <p>Responsive website</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>My Role</h4>
+                                    <p>UI/UX Designer</p>
+                                    <p>Front End Developer</p>
+                                </div>
+                            </div>
+                            <div class="intro text-section">
+                                <h4 class="title">Introduction</h4>
+                                <p>CreateBase is a startup that provides an online educational platform aimed at enabling students to create authentic solutions to real-world problems using 3D simulations and digital robotics. The platform provides teaching material for students to learn STEAM subjects and the basics of coding. This new website was set out to improve the experience of the website, demonstrate the value of the product better to target users, better establish the company’s branding and increase sign ups to the platform.</p>
+                                <a href="https://createbase.co.nz/"></a>
+                            </div>
+                            <div class="role text-section">
+                                <h4 class="title">My Role</h4>
+                                <p>For this project I led the wireframing, low and high fidelity mockups, user testing and front end development.</p>
+                                <p>I collaborated with the marketing coordinator (Weiwei) and product owner (Brydon) for early ideation and content management and backend engineer (Carl) for implementation and testing.</p>
+                            </div>
+                            <div class="problem text-section">
+                                <h4 class="title">Problem</h4>
+                                <p>The old version of the website suffered from many problems as the business pivoted in it's search for product market fit.</p>
+                                <img src="/images/cb/understand.jpg" alt="understand">
+                                <img src="/images/cb/outdated.jpg" alt="outdated">
+                                <img src="/images/cb/inconsistent.jpg" alt="inconsistent">
+                            </div>
+                            <div class="define-problem text-section">
+                                <h4 class="title">Defining the problem</h4>
+                                <img src="/images/cb/problem.jpg" alt="problem">
+                            </div>
+                            <div class="goals text-section">
+                                <h4 class="title">Goals</h4>
+                                <div class="sub-text-container">
+                                    <h4 class="sub-title">Improve product understanding</h4>
+                                    <p>Design the new website using specific user journeys that cater to a range of customers. Due to the different priorities that technology teachers have considering their teaching styles, curriculum, school-specific content structure, and other factors. The flow of information and user journeys are important.</p>
+                                </div>
+                                <div class="sub-text-container">
+                                    <h4 class="sub-title">Relevant "at a glance" content</h4>
+                                    <p>Conveying the core product offerings clearly whilst showcasing important features to teachers efficiently is crucial to giving them more confidence in registering and trying out the platform.</p>
+                                </div>
+                                <div class="sub-text-container">
+                                    <h4 class="sub-title">Consistency is key</h4>
+                                    <p>Utilise the power of familiarity by making the website and platform components and web stack consistent. This will reduce the learning curve of the new platform and make it easier for users to start using the product right away. Alongside this ease of use, usage speed and retention from having a smooth experience can improve for different users.</p>
+                                </div>
+                            </div>
+                            <div class="define-problem text-section">
+                                <h4 class="title">Our customers</h4>
+                                <p>These customer personas were created using the insights and observations we had gathered from interviewing teachers and live and online schools demos.</p>
+                                <img src="/images/cb/custs.jpg" alt="cb">
+                            </div>
+                            <div class="define-problem text-section">
+                                <h4 class="title">Process</h4>
+                                <p>Provided are some of many versions of the early website flows, low and high fidelity prototypes created in Figma. The initial website flows were created using different approaches based on the different personas that were created. As the flow of the content was one of the priorities this was combined and iterated on multiple times before the low fidelity mockups began.</p>
+                                <img src="/images/cb/userflow.jpg" alt="flows">
+                                <img src="/images/cb/lowfid.jpg" alt="low-fidelity">
+                                <img src="/images/cb/highfid.jpg" alt="high-fidelity">
+                            </div>
+                            <div class="define-problem text-section">
+                                <h4 class="title">Usability Testing and Customer Interviews</h4>
+                                <p>To test our prototypes and validate our design decisions, we tested with teachers remotely keeping all parties safe.</p>
+                                <p>I completed several semi unstructured observational tests primarily observing how a user browses the home page figma prototype whilst they speak out loud what they are thinking throughout the process. Important insights and behaviours were noted. This test was mainly for qualitative feedback and provided useful insights on the usability of the home page.
+                                </p>
+                                <p>Goals of testing</p>
+                                <ul>
+                                    <li><div class="box"></div><p>Understand if the new home page is exciting enough to users to encourage them sign up to the platform</p></li>
+                                    <li><div class="box"></div><p>Understand if the content of the home page is structured well enough for users to have a good understanding of the product </p></li>
+                                </ul>
+                                <p>Actionable Outcomes</p>
+                                <ul>
+                                    <li><div class="box"></div><p>Edit the home page mock up to improve the user experience and content</p></li>
+                                    <li><div class="box"></div><p>Edit the videos to provide the best experience</p></li>
+                                    <li><div class="box"></div><p>Be able to confidently implement a home page with justifiable reasoning for content decisions</p></li>
+                                </ul>
+                                <p>Figma Prototype</p>
+                                <img src="/images/cb/proto.jpg" alt="proto">
+                                <p>Testing template - Converted to digital after handwritten during call</p>
+                                <img src="/images/cb/testing.jpg" alt="testing">
+                            </div>
+                            <div class="define-problem text-section">
+                                <h4 class="title">Final Design</h4>
+                                <div class="img-wrap"><img src="/images/cb/website.jpg" alt="testing"></div>
+                                <button class="linkBtn">
+                                    <a href="https://createbase.co.nz/">
+                                        <p>View the complete website here</p>
+                                    </a>
+                                </button>
+                                <h4 class="title">Implementation</h4>
+                                <p>I was solely responsible for the coding implementation of the website after the design process. The website was coded using ReactJS, TypeScript, NextJS, SASS, Express, HTML, CSS, Git</p>
+                            </div>
+                            <div class="role text-section">
+                                <h4 class="title">Outcomes</h4>
+                                <p>Currently the new website has just been deployed with tracking data waiting to be analysed. Initial feedback from customers of the new website have been largely positive.</p>
+                            </div>
+                            <div class="goals text-section">
+                                <h4 class="title">What we learned</h4>
+                                <div class="sub-text-container">
+                                    <h4 class="sub-title">A reiteration on the importance of user testing</h4>
+                                    <p>The insights from these user tests were beneficial when conducting these user tests, with some previous assumptions challenged and changed. This helped to ensure that we were providing teachers with the best experience for their different needs.</p>
+                                </div>
+                                <div class="sub-text-container">
+                                    <h4 class="sub-title">Taking a step back</h4>
+                                    <p>Taking a look at the larger picture with other members from different teams helped to re-align and provide useful feedback on improvements to the website.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="platform" class="content-wrap">
+                    <div class="main-content">
+                        <div class="main-img">
+                            <a href="https://createbase.co.nz/"><img src="/images/home/cbwebsite.jpg" alt="CreateBase"></a>
+                        </div>
+    
+                        <div class="text-wrap">
+                            <div class="main-details">
+                                <div class="main-details-container">
+                                    <h4>Timeline</h4>
+                                    <p>2.5 weeks</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>Platform</h4>
+                                    <p>Responsive website</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>My Role</h4>
+                                    <p>UI/UX Designer</p>
+                                    <p>Front End Developer</p>
+                                </div>
+                            </div>
+                            <div class="intro text-section">
+                                <h4 class="title">Introduction</h4>
+                                <p>CreateBase is a startup that provides an online educational platform aimed at enabling students to create authentic solutions to real-world problems using 3D simulations and digital robotics. The platform provides teaching material for students to learn STEAM subjects and the basics of coding. This new website was set out to improve the experience of the website, demonstrate the value of the product better to target users, better establish the company’s branding and increase sign ups to the platform.</p>
+                                <a href="https://createbase.co.nz/"></a>
+                            </div>
+                            <div class="role text-section">
+                                <h4 class="title">My Role</h4>
+                                <p>For this project I led the wireframing, low and high fidelity mockups, user testing and front end development.</p>
+                                <p>I collaborated with the marketing coordinator (Weiwei) and product owner (Brydon) for early ideation and content management and backend engineer (Carl) for implementation and testing.</p>
+                            </div>
+                            <div class="problem text-section">
+                                <h4 class="title">Problem</h4>
+                                <p>The old version of the website suffered from many problems as the business pivoted in it's search for product market fit.</p>
+                                <img src="/images/cb/understand.jpg" alt="understand">
+                                <img src="/images/cb/outdated.jpg" alt="outdated">
+                                <img src="/images/cb/inconsistent.jpg" alt="inconsistent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Bb" class="content-wrap">
+                    <div class="main-content">
+                        <div class="main-img">
+                            <a href="https://createbase.co.nz/"><img src="/images/home/cbwebsite.jpg" alt="CreateBase"></a>
+                        </div>
+    
+                        <div class="text-wrap">
+                            <div class="main-details">
+                                <div class="main-details-container">
+                                    <h4>Timeline</h4>
+                                    <p>2.5 weeks</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>Platform</h4>
+                                    <p>Responsive website</p>
+                                </div>
+                                <div class="main-details-container">
+                                    <h4>My Role</h4>
+                                    <p>UI/UX Designer</p>
+                                    <p>Front End Developer</p>
+                                </div>
+                            </div>
+                            <div class="intro text-section">
+                                <h4 class="title">Introduction</h4>
+                                <p>CreateBase is a startup that provides an online educational platform aimed at enabling students to create authentic solutions to real-world problems using 3D simulations and digital robotics. The platform provides teaching material for students to learn STEAM subjects and the basics of coding. This new website was set out to improve the experience of the website, demonstrate the value of the product better to target users, better establish the company’s branding and increase sign ups to the platform.</p>
+                                <a href="https://createbase.co.nz/"></a>
+                            </div>
+                            <div class="role text-section">
+                                <h4 class="title">My Role</h4>
+                                <p>For this project I led the wireframing, low and high fidelity mockups, user testing and front end development.</p>
+                                <p>I collaborated with the marketing coordinator (Weiwei) and product owner (Brydon) for early ideation and content management and backend engineer (Carl) for implementation and testing.</p>
+                            </div>
+                            <div class="problem text-section">
+                                <h4 class="title">Problem</h4>
+                                <p>The old version of the website suffered from many problems as the business pivoted in it's search for product market fit.</p>
+                                <img src="/images/cb/understand.jpg" alt="understand">
+                                <img src="/images/cb/outdated.jpg" alt="outdated">
+                                <img src="/images/cb/inconsistent.jpg" alt="inconsistent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/cb.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </body>
 </html>

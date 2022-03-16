@@ -13,13 +13,14 @@ let home = {
         scrollBtnBottom: document.querySelector('#up-arrow'),
         about: document.querySelector('.about'),
         portfolioPreview: document.querySelector('.portfolio'),
-
+		nav: document.querySelector('.nav'),
 	},
 
 	event: {
         // Scroll Buttons
 		scrollDown: undefined,
 		scrollUp: undefined,
+		showNav: undefined,
 	},
 };
 
@@ -38,7 +39,8 @@ home.init.init = () => {
 
 home.init.attachListeners = () => {
     home.elem.scrollBtn.addEventListener("click", home.event.scrollDown);
-    home.elem.scrollBtnBottom.addEventListener("click", home.event.scrollUp);
+    // home.elem.scrollBtnBottom.addEventListener("click", home.event.scrollUp);
+	window.addEventListener("scroll", home.event.showNav);
 };
 
 home.event.scrollDown = () => {
@@ -47,6 +49,17 @@ home.event.scrollDown = () => {
 home.event.scrollUp = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+home.event.showNav = () => {
+	var y = window.scrollY;
+	if (y >= 700) {
+	  	home.elem.nav.className = "nav"
+		console.log(scrollY)
+	}
+	 else {
+		home.elem.nav.className = "hide"
+	}
+};
 
 // Nav menu
 

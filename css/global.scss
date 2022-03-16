@@ -50,6 +50,9 @@ nav{
   top: 2rem;
   left: 0;
   width: 100%;
+  z-index: 999;
+  opacity: 100%;
+  transition: opacity ease 0.3s;
 }
 
 .nav-bar{
@@ -76,9 +79,14 @@ nav{
   h3{
       color: $gray;
       transition: color ease 0.3s;
-      &:hover{
-          color: $navy;
-      }
+  }
+  a{
+    padding: 1rem 3rem;
+  }
+  &:hover{
+    h3{
+      color: $navy;
+    }
   }
 }
 
@@ -90,6 +98,48 @@ nav{
       height: 3rem;
       // width: 100%;
   }
+}
+
+.hide{
+  display: none;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+}
+
+.dropdown{
+  position: relative;
+  .dropdown-menu{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    top: 5rem;
+    transition: visibility ease 0.3s, opacity ease 0.3s;
+    width: 100%;
+    a{
+      width: 100%;
+      text-align: center;
+      h3{
+      padding: 2rem 0;
+      border: thin solid $gray;
+      width: 100%;
+      background-color: white;
+      &:hover{
+        color: $red;
+      }
+      }
+    }
+  }
+  &:hover{
+    .dropdown-menu{
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+}
+
+.active{
+  color: $navy !important;
 }
 
 .section{
@@ -139,6 +189,24 @@ a{
   text-decoration: none;
 }
 
+.linkBtn{
+    background-color: $navy;
+    // max-width: 13rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+    p{
+        color: white;
+        // font-family: $akira;
+        font-weight: 500;
+    }
+    &:hover{
+        background-color: $red;
+    }
+}
+
 .spacer{
   padding: 0 1em;
   position: relative;
@@ -174,13 +242,18 @@ a{
   background-color: $red;
 }
 
+.side-menu{
+  display: none;
+}
+
 @media only screen and (min-width: 786px) {
   .nav{
     display: flex;
   }
   .section-wrap{
     padding: 4rem;
-}
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -188,5 +261,27 @@ a{
       padding: 5rem 10rem;
   }
 
-
+  .side-menu{
+    position: fixed;
+    display: block;
+    left: 5vw;
+    top: 15rem;
+    li{
+      cursor: pointer;
+    }
+    h3{
+        padding-bottom: 2rem;
+        line-height: 150%;
+        color: $gray;
+    }
+    .active{
+        color: $navy;
+    }
+    .side-menu-text{
+      transition: color ease 0.3s;
+      &:hover{
+        color: $navy;
+      }
+    }
+}
 }
