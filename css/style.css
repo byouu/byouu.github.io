@@ -280,6 +280,9 @@ a {
     left: 5vw;
     top: 15rem;
   }
+  .side-menu li {
+    cursor: pointer;
+  }
   .side-menu h3 {
     padding-bottom: 2rem;
     line-height: 150%;
@@ -696,6 +699,11 @@ nav {
 
 .cv .cv-text-content-container p {
   padding: 0.5rem 0;
+}
+
+.cv .cv-text-content-container .corric {
+  padding: 0;
+  font-size: 1rem;
 }
 
 .cv .cv-skill-title-container h5 {
