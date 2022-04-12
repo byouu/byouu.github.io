@@ -30,17 +30,19 @@ body {
 
 nav {
   position: fixed;
-  top: 2rem;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   opacity: 100%;
   -webkit-transition: opacity ease 0.3s;
   transition: opacity ease 0.3s;
+  border-bottom: thin solid #CDCDCD;
 }
 
 .nav-bar {
-  width: 90%;
+  width: 100%;
+  padding: 0 5rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +70,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  border: thin solid #CDCDCD;
 }
 
 .nav-item {
@@ -115,22 +116,25 @@ nav {
   opacity: 0;
   visibility: hidden;
   left: 0;
-  top: 5rem;
+  top: 4.5rem;
   -webkit-transition: visibility ease 0.3s, opacity ease 0.3s;
   transition: visibility ease 0.3s, opacity ease 0.3s;
   width: 100%;
+  border: thin solid #CDCDCD;
 }
 
 .dropdown .dropdown-menu a {
   width: 100%;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown .dropdown-menu a h3 {
   padding: 2rem 0;
-  border: thin solid #CDCDCD;
   width: 100%;
   background-color: white;
+  margin: 0;
 }
 
 .dropdown .dropdown-menu a h3:hover {
@@ -302,6 +306,7 @@ a {
 
 .project {
   padding-top: 7rem;
+  position: relative;
 }
 
 .project-wrap {
@@ -457,6 +462,7 @@ a {
 
 .text-section img {
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .text-section h4 {

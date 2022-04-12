@@ -47,16 +47,18 @@ body{
 
 nav{
   position: fixed;
-  top: 2rem;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   opacity: 100%;
   transition: opacity ease 0.3s;
+  border-bottom: thin solid $gray;
 }
 
 .nav-bar{
-  width: 90%;
+  width: 100%;
+  padding: 0 5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -71,7 +73,7 @@ nav{
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  border: thin solid $gray;
+  // padding: 0 5rem;
 }
 
 .nav-item{
@@ -113,17 +115,22 @@ nav{
     opacity: 0;
     visibility: hidden;
     left: 0;
-    top: 5rem;
+    top: 4.5rem;
     transition: visibility ease 0.3s, opacity ease 0.3s;
     width: 100%;
+    border: thin solid $gray;
+    // display: flex;
+    // flex-direction: column;
     a{
       width: 100%;
       text-align: center;
+      margin: 0;
+      padding: 0;
       h3{
       padding: 2rem 0;
-      border: thin solid $gray;
       width: 100%;
       background-color: white;
+      margin: 0;
       &:hover{
         color: $red;
       }

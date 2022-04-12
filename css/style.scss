@@ -297,6 +297,7 @@ nav{
     //     padding: 3rem 3rem;
     //     max-width: 100vw;
     // }
+    position: relative;
     .about-text{
         p{
             font-weight: 400;
@@ -304,6 +305,11 @@ nav{
     }
     .me{
         display: none;
+    }
+    .background-shapes{
+        .background-text{
+            display: none;
+        }
     }
 }
 
@@ -569,6 +575,11 @@ nav{
         // }
         .me{
             display: none;
+        }
+        .background-shapes{
+            .background-text{
+                display: block;
+            }
         }
     }
 
