@@ -14,6 +14,8 @@ let home = {
         about: document.querySelector('.about'),
         portfolioPreview: document.querySelector('.portfolio'),
 		nav: document.querySelector('.nav'),
+		talkBtn: document.querySelector('.lets-talk-btn'),
+		contact: document.querySelector('#contact')
 	},
 
 	event: {
@@ -21,6 +23,7 @@ let home = {
 		scrollDown: undefined,
 		scrollUp: undefined,
 		showNav: undefined,
+		scrollTalk: undefined
 	},
 };
 
@@ -41,6 +44,7 @@ home.init.attachListeners = () => {
     home.elem.scrollBtn.addEventListener("click", home.event.scrollDown);
     // home.elem.scrollBtnBottom.addEventListener("click", home.event.scrollUp);
 	window.addEventListener("scroll", home.event.showNav);
+	home.elem.talkBtn.addEventListener("click", home.event.scrollTalk);
 };
 
 home.event.scrollDown = () => {
@@ -60,6 +64,10 @@ home.event.showNav = () => {
 		home.elem.nav.className = "hide"
 	}
 };
+
+home.event.scrollTalk = () => {
+    home.elem.contact.scrollIntoView({behavior: "smooth", block: "center"});
+}
 
 // Nav menu
 

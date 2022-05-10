@@ -631,7 +631,7 @@ nav {
 
 .home .home-title h3 {
   text-align: center;
-  font-size: 1.9em;
+  font-size: 8vw;
   margin: 0;
   color: #CE5F15;
 }
@@ -651,14 +651,14 @@ nav {
   position: relative;
   z-index: 50;
   top: 0;
-  font-size: 4.5rem;
+  font-size: 15vw;
 }
 
 .home .h1-container .outline-text {
   position: absolute;
   top: 0.05em;
   left: -0.08em;
-  font-size: 4.5rem;
+  font-size: 15vw;
   color: white;
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
@@ -671,6 +671,10 @@ nav {
   position: relative;
 }
 
+.about .about-wrap {
+  padding-bottom: 3rem;
+}
+
 .about .about-text p {
   font-weight: 400;
 }
@@ -681,6 +685,128 @@ nav {
 
 .about .background-shapes .background-text {
   display: none;
+}
+
+.about .background-shapes .top-left-box {
+  left: 7%;
+  top: 6.8%;
+  height: 0.5em;
+  width: 50%;
+}
+
+.about .background-shapes .top-left-box-2 {
+  left: 7%;
+  top: 5.8%;
+  height: 0.5em;
+  width: 45%;
+}
+
+.about .background-shapes .mid-left-box {
+  left: 7%;
+  bottom: 5%;
+  height: 1em;
+  width: 6em;
+}
+
+.about .background-shapes .bot-left-box {
+  left: 70%;
+  bottom: 4%;
+  height: 0.5em;
+  width: 5em;
+}
+
+.about .background-shapes .bot-left-box-2 {
+  left: 65%;
+  bottom: 3%;
+  height: 0.5em;
+  width: 6em;
+}
+
+.about .background-shapes .bot-left-box-3 {
+  left: 10%;
+  bottom: 3%;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.about .background-shapes .top-mid-box {
+  left: 30%;
+  top: 7%;
+  height: 0.8em;
+  width: 0.8em;
+}
+
+.about .background-shapes .bot-mid-box {
+  display: none;
+  left: 90%;
+  bottom: 35%;
+  height: 0.8em;
+  width: 0.4em;
+}
+
+.about .background-shapes .top-right-line {
+  right: 6%;
+  top: 15%;
+  height: 1.5em;
+  width: 1rem;
+}
+
+.about .background-shapes .top-right-line-2 {
+  right: 6%;
+  top: 7%;
+  height: 4em;
+  width: 1rem;
+}
+
+.about .background-shapes .top-left-text {
+  left: 7%;
+  top: 10%;
+  height: 0.6em;
+  width: 20vw;
+}
+
+.about .background-shapes .bot-right-box {
+  right: 20%;
+  bottom: 5%;
+  height: 1em;
+  width: 3em;
+}
+
+.about .background-shapes .bot-right-box-2 {
+  right: 5%;
+  bottom: 5%;
+  height: 1em;
+  width: 6em;
+}
+
+.about .background-shapes .bot-right-text {
+  right: 7%;
+  bottom: 10%;
+}
+
+.about .background-shapes .color-scheme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .background-shapes .color-scheme .color-scheme-shape {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.about .section-header {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+}
+
+.about h3, .about p {
+  padding-bottom: 2rem;
 }
 
 .cv .cv-text-container {
@@ -917,6 +1043,20 @@ nav {
 }
 
 @media only screen and (min-width: 786px) {
+  .home .home-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: auto;
+  }
+  .home .home-title h3 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 0;
+    color: #CE5F15;
+  }
   .home .home-logo-card {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 45%;
@@ -954,13 +1094,13 @@ nav {
     position: relative;
     z-index: 50;
     top: 0;
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .home .h1-container .outline-text {
     position: absolute;
     top: 0.05em;
     left: -0.08em;
-    font-size: 6rem;
+    font-size: 5rem;
     color: white;
     -webkit-text-fill-color: white;
     /* Will override color (regardless of order) */
@@ -969,7 +1109,7 @@ nav {
     z-index: 10;
   }
   .section-wrap {
-    padding: 4rem;
+    padding: 10vw;
   }
   .about {
     position: relative;
@@ -988,18 +1128,37 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 2rem 0;
   }
   .about .about-text {
     width: 50%;
-    padding: 0 5rem;
+  }
+  .about .about-text h3 {
+    padding: 0;
   }
   .about .about-text p {
     font-weight: 400;
     padding: 1rem 0;
   }
+  .about .section-header {
+    width: 100%;
+    text-align: left;
+  }
+  .about .section-header h3 {
+    padding-bottom: 1rem;
+  }
   .about .me {
-    display: none;
+    display: block;
+    width: auto;
+    padding: 0 1rem;
+  }
+  .about .me img {
+    max-width: 20rem;
   }
   .about .background-shapes .background-text {
     display: block;
@@ -1134,13 +1293,13 @@ nav {
     position: relative;
     z-index: 50;
     top: 0;
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .home .h1-container .outline-text {
     position: absolute;
     top: 0.05em;
     left: -0.08em;
-    font-size: 8rem;
+    font-size: 7rem;
     color: white;
     -webkit-text-fill-color: white;
     /* Will override color (regardless of order) */
@@ -1148,8 +1307,14 @@ nav {
     -webkit-text-stroke-color: #171433;
     z-index: 10;
   }
+  .home .job-title {
+    font-size: 10rem;
+  }
   .section-wrap {
     padding: 5rem 10rem;
+  }
+  .background-shapes .vert-text {
+    right: 5%;
   }
   .about .about-wrap {
     padding: 10vw;
@@ -1158,25 +1323,32 @@ nav {
     font-size: 6rem;
   }
   .about .about-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .about .about-text {
-    width: 50%;
-    padding-right: 2rem;
+    width: 30%;
+    padding: 0;
   }
   .about .about-text p {
     font-weight: 400;
     padding: 1rem 0;
   }
+  .about .section-header {
+    width: 30%;
+    text-align: right;
+  }
+  .about .section-header h3 {
+    padding-bottom: 1rem;
+  }
   .about .me {
     display: block;
-    width: 50%;
+    width: auto;
     padding: 0 3rem;
   }
   .about .me img {

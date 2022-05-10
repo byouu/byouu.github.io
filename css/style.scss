@@ -259,7 +259,7 @@ nav{
         margin: auto;
         h3{
             text-align: center;
-            font-size: 1.9em;
+            font-size: 8vw;
             margin: 0;
             color: $red;
         }
@@ -276,13 +276,13 @@ nav{
             position: relative;
             z-index: 50;
             top: 0;
-            font-size: 4.5rem;
+            font-size: 15vw;
         }
         .outline-text{
             position: absolute;
             top: 0.05em;
             left: -0.08em;
-            font-size: 4.5rem;
+            font-size: 15vw;
             color: white;
             -webkit-text-fill-color: white; /* Will override color (regardless of order) */
             -webkit-text-stroke-width: 1px;
@@ -293,10 +293,9 @@ nav{
 }
 
 .about{
-    // .about-wrap{
-    //     padding: 3rem 3rem;
-    //     max-width: 100vw;
-    // }
+    .about-wrap{
+        padding-bottom:3rem;
+    }
     position: relative;
     .about-text{
         p{
@@ -310,6 +309,110 @@ nav{
         .background-text{
             display: none;
         }
+        // LEFT SHAPES
+        .top-left-box{
+            left: 7%;
+            top: 6.8%;
+            height: 0.5em;
+            width: 50%;
+        }
+        .top-left-box-2{
+            left: 7%;
+            top: 5.8%;
+            height: 0.5em;
+            width: 45%;
+        }
+        .mid-left-box{
+            left: 7%;
+            bottom: 5%;
+            height: 1em;
+            width: 6em;
+        }
+        .bot-left-box{
+            left: 70%;
+            bottom: 4%;
+            height: 0.5em;
+            width: 5em;
+        }
+        .bot-left-box-2{
+            left: 65%;
+            bottom: 3%;
+            height: 0.5em;
+            width: 6em;
+        }
+        .bot-left-box-3{
+            left: 10%;
+            bottom: 3%;
+            height: 0.5em;
+            width: 0.5em;
+        }
+    
+        // MID SHAPES
+        .top-mid-box{
+            left: 30%;
+            top: 7%;
+            height: 0.8em;
+            width: 0.8em;
+        }
+        .bot-mid-box{
+            display: none;
+            left: 90%;
+            bottom: 35%;
+            height: 0.8em;
+            width: 0.4em;
+        }
+    
+        // RIGHT SHAPES
+        .top-right-line{
+            right: 6%;
+            top: 15%;
+            height: 1.5em;
+            width: 1rem;
+        }
+        .top-right-line-2{
+            right: 6%;
+            top: 7%;
+            height: 4em;
+            width: 1rem;
+        }
+        .top-left-text{
+            left: 7%;
+            top: 10%;
+            height: 0.6em;
+            width: 20vw;
+        }
+        .bot-right-box{
+            right: 20%;
+            bottom: 5%;
+            height: 1em;
+            width: 3em;
+        }
+        .bot-right-box-2{
+            right: 5%;
+            bottom: 5%;
+            height: 1em;
+            width: 6em;
+        }
+        .bot-right-text{
+            right: 7%;
+            bottom:10%;
+        }
+        .color-scheme{
+            display: flex;
+            .color-scheme-shape{
+                flex: 0 0 30%;
+            }
+        }
+    }
+    .section-header{
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h3, p{
+        padding-bottom: 2rem;
     }
 }
 
@@ -493,6 +596,19 @@ nav{
         //         font-size: 4em;
         //     }
         // }
+        .home-title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            h3{
+                text-align: center;
+                font-size: 1.9rem;
+                margin: 0;
+                color: $red;
+            }
+        }
         .home-logo-card{
             flex: 0 0 45%;
             position: relative;
@@ -523,13 +639,13 @@ nav{
                 position: relative;
                 z-index: 50;
                 top: 0;
-                font-size: 6rem;
+                font-size: 5rem;
             }
             .outline-text{
                 position: absolute;
                 top: 0.05em;
                 left: -0.08em;
-                font-size: 6rem;
+                font-size: 5rem;
                 color: white;
                 -webkit-text-fill-color: white; /* Will override color (regardless of order) */
                 -webkit-text-stroke-width: 1px;
@@ -540,7 +656,7 @@ nav{
     }
 
     .section-wrap{
-        padding: 4rem;
+        padding: 10vw;
     }
 
     .about{
@@ -555,27 +671,40 @@ nav{
         .about-content{
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
             padding: 2rem 0;
         }
         .about-text{
             width: 50%;
-            padding: 0 5rem;
+            // padding: 0 5rem;
+            h3{
+                padding: 0;
+            }
             p{
                 font-weight: 400;
                 padding: 1rem 0;
             }
         }
-        // .me{
-        //     display: block;
-        //     width: 50%;
-        //     padding: 0 3rem;
-        //     img{
-        //         max-width: 20rem;
-        //     }
-        // }
-        .me{
-            display: none;
+        .section-header{
+            // border: thin solid red;
+            width: 100%;
+            text-align: left;
+            h3{
+                padding-bottom: 1rem;
+            }
         }
+        .me{
+            display: block;
+            width: auto;
+            padding: 0 1rem;
+            img{
+                max-width: 20rem;
+            }
+        }
+        // .me{
+        //     display: none;
+        // }
         .background-shapes{
             .background-text{
                 display: block;
@@ -712,13 +841,13 @@ nav{
                 position: relative;
                 z-index: 50;
                 top: 0;
-                font-size: 8rem;
+                font-size: 7rem;
             }
             .outline-text{
                 position: absolute;
                 top: 0.05em;
                 left: -0.08em;
-                font-size: 8rem;
+                font-size: 7rem;
                 color: white;
                 -webkit-text-fill-color: white; /* Will override color (regardless of order) */
                 -webkit-text-stroke-width: 1px;
@@ -726,37 +855,69 @@ nav{
                 z-index: 10;
             }
         }
+        .job-title{
+            font-size: 10rem;
+        }
     }
     .section-wrap{
         padding: 5rem 10rem;
+    }
+
+    .background-shapes{
+        // LEFT SHAPES
+        .vert-text{
+            right: 5%;
+        }
     }
 
     .about{
         .about-wrap{
             padding:10vw;
             // max-width: 100vw;
+            // *{
+            //     border: thin solid red;
+            // }
         }
         .section-header{
             font-size: 6rem;
         }
+        // .about-content{
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-between;
+        //     flex-wrap: wrap;
+        //     padding: 2rem 0;
+        // }
         .about-content{
-            display: flex;
             align-items: center;
-            padding: 2rem 0;
+            flex-direction: row;
+            // border: thin solid blue;
+            // padding: 2rem 0;
         }
         .about-text{
             // border: thin solid black;
-            width: 50%;
-            padding-right: 2rem;
+            width: 30%;
+            // padding-right: 2rem;
+            // border: thin solid red;
+            padding: 0;
             p{
                 font-weight: 400;
                 padding: 1rem 0;
             }
         }
+        .section-header{
+            // border: thin solid red;
+            width: 30%;
+            text-align: right;
+            h3{
+                padding-bottom: 1rem;
+            }
+        }
         .me{
             display: block;
-            width: 50%;
+            width: auto;
             padding: 0 3rem;
+            // border: thin solid blue;
             img{
                 max-width: 20rem;
             }
