@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 60rem;
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 0 0 0 2rem;
         width: 100%;
     }
@@ -50,7 +50,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -80,7 +80,7 @@
 .main-details{
     display: flex;
     padding: 2rem 0;
-    margin-top: 3rem;
+    margin: 3rem 0;
     justify-content: center;
     border-top: thin solid $gray;
     border-bottom: thin solid $gray;
@@ -98,7 +98,7 @@
 }
 
 .text-section{
-    padding: 2rem 0;
+    // padding: 2rem 0;
     width: 100%;
     .title{
         padding-bottom: 1rem;
@@ -114,7 +114,7 @@
     //     font-weight: 700;
     // }
     h4{
-        padding-bottom: 1rem;
+        padding: 1rem 0;
     }
     .sub-text-container{
         padding-bottom: 2rem;
@@ -131,24 +131,63 @@
     }
     .box{
         background-color: $red;
-        margin-top: 0.8rem;
+        margin-top: 0.7rem;
         height: 0.5rem;
         width: 0.5rem;
     }
 }
 
 .linkBtn{
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 .goals{
     .title{
         font-size: 1.3rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 }
 
+.img-caption{
+    color: $gray;
+}
+
 @media only screen and (min-width: 786px) {
+    .project-title{
+        width: 100%;
+        max-width: 60rem;
+        h1{
+            font-size: 3rem;
+            padding: 0 0 0 2rem;
+            width: 100%;
+        }
+    }
+    .project-num{
+        position: relative;
+        width: 5rem;
+        .box{
+            position: absolute;
+            border: 0.2rem solid $gray;
+            height: 4rem;
+            width: 4rem;
+            z-index: 8;
+        }
+        .small-box{
+            position: absolute;
+            background-color: $red;
+            height: 2rem;
+            width: 2rem;
+            z-index: 9;
+        }
+        .num{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            font-size: 2rem;
+        }
+    }
 
 }
 @media only screen and (min-width: 1200px) {

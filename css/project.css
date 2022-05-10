@@ -331,7 +331,7 @@ a {
 }
 
 .project-title h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 0 0 0 2rem;
   width: 100%;
 }
@@ -369,7 +369,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .main-content {
@@ -417,7 +417,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem 0;
-  margin-top: 3rem;
+  margin: 3rem 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -448,7 +448,6 @@ a {
 }
 
 .text-section {
-  padding: 2rem 0;
   width: 100%;
 }
 
@@ -466,7 +465,7 @@ a {
 }
 
 .text-section h4 {
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .text-section .sub-text-container {
@@ -492,17 +491,60 @@ a {
 
 .text-section .box {
   background-color: #CE5F15;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
   height: 0.5rem;
   width: 0.5rem;
 }
 
 .linkBtn {
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .goals .title {
   font-size: 1.3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.img-caption {
+  color: #CDCDCD;
+}
+
+@media only screen and (min-width: 786px) {
+  .project-title {
+    width: 100%;
+    max-width: 60rem;
+  }
+  .project-title h1 {
+    font-size: 3rem;
+    padding: 0 0 0 2rem;
+    width: 100%;
+  }
+  .project-num {
+    position: relative;
+    width: 5rem;
+  }
+  .project-num .box {
+    position: absolute;
+    border: 0.2rem solid #CDCDCD;
+    height: 4rem;
+    width: 4rem;
+    z-index: 8;
+  }
+  .project-num .small-box {
+    position: absolute;
+    background-color: #CE5F15;
+    height: 2rem;
+    width: 2rem;
+    z-index: 9;
+  }
+  .project-num .num {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=project.css.map */
