@@ -12,12 +12,17 @@ let cb = {
 		webSection: document.querySelector('#website'),
 		brandSection: document.querySelector('#branding'),
 		threedSection: document.querySelector('#threed'),
+		illusSection: document.querySelector('#illus'),
+
 		webBtn: document.querySelector('#websiteBtn'),
 		brandBtn: document.querySelector('#brandingBtn'),
 		threedBtn: document.querySelector('#threedBtn'),
+		illusBtn: document.querySelector('#illusBtn'),
+
 		websiteBtnTitle: document.querySelector('#websiteBtnTitle'),
 		brandingBtnTitle: document.querySelector('#brandingBtnTitle'),
 		threedBtnTitle: document.querySelector('#threedBtnTitle'),
+		illusBtnTitle: document.querySelector('#illusBtnTitle'),
 	},
 
 	event: {
@@ -25,6 +30,7 @@ let cb = {
 		showPlat: undefined,
 		showBrand:  undefined,
 		show3D: undefined,
+		showIllus: undefined,
 	},
 };
 
@@ -43,33 +49,51 @@ cb.init.attachListeners = () => {
 	cb.elem.webBtn.addEventListener("click", cb.event.showWeb);
 	cb.elem.brandBtn.addEventListener("click", cb.event.showBrand);
 	cb.elem.threedBtn.addEventListener("click", cb.event.show3D);
+	cb.elem.illusBtn.addEventListener("click", cb.event.showIllus);
 };
 
 cb.event.showWeb = () => {
 	cb.elem.webSection.className = "content-wrap"
 	cb.elem.brandSection.className = "hide"
 	cb.elem.threedSection.className = "hide"
+	cb.elem.illusSection.className = "hide"
 	cb.elem.websiteBtnTitle.className = "active"
 	cb.elem.brandingBtnTitle.className = "inactive"
 	cb.elem.threedBtnTitle.className = "inactive"
+	cb.elem.illusBtnTitle.className = "inactive"
 	document.documentElement.scrollTop = 0;
 };
 cb.event.showBrand = () => {
 	cb.elem.brandSection.className = "content-wrap"
 	cb.elem.webSection.className = "hide"
 	cb.elem.threedSection.className = "hide"
+	cb.elem.illusSection.className = "hide"
 	cb.elem.websiteBtnTitle.className = "inactive"
 	cb.elem.brandingBtnTitle.className = "active"
 	cb.elem.threedBtnTitle.className = "inactive"
+	cb.elem.illusBtnTitle.className = "inactive"
 	document.documentElement.scrollTop = 0;
 };
 cb.event.show3D = () => {
 	cb.elem.threedSection.className = "content-wrap"
 	cb.elem.webSection.className = "hide"
 	cb.elem.brandSection.className = "hide"
+	cb.elem.illusSection.className = "hide"
 	cb.elem.websiteBtnTitle.className = "inactive"
 	cb.elem.brandingBtnTitle.className = "inactive"
+	cb.elem.illusBtnTitle.className = "inactive"
 	cb.elem.threedBtnTitle.className = "active"
+	document.documentElement.scrollTop = 0;
+};
+cb.event.showIllus = () => {
+	cb.elem.illusSection.className = "content-wrap"
+	cb.elem.threedSection.className = "hide"
+	cb.elem.webSection.className = "hide"
+	cb.elem.brandSection.className = "hide"
+	cb.elem.websiteBtnTitle.className = "inactive"
+	cb.elem.brandingBtnTitle.className = "inactive"
+	cb.elem.threedBtnTitle.className = "inactive"
+	cb.elem.illusBtnTitle.className = "active"
 	document.documentElement.scrollTop = 0;
 };
 

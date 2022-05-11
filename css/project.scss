@@ -152,6 +152,23 @@
     color: $gray;
 }
 
+.short-intro{
+    padding: 1rem 0;
+}
+
+#threed{
+    .intro{
+        padding-bottom: 1rem;
+    }
+}
+
+.side-menu-text{
+    transition: color ease 0.2s;
+    &:hover{
+        color: $navy;
+    }
+}
+
 @media only screen and (min-width: 786px) {
     .project-title{
         width: 100%;

@@ -509,6 +509,23 @@ a {
   color: #CDCDCD;
 }
 
+.short-intro {
+  padding: 1rem 0;
+}
+
+#threed .intro {
+  padding-bottom: 1rem;
+}
+
+.side-menu-text {
+  -webkit-transition: color ease 0.2s;
+  transition: color ease 0.2s;
+}
+
+.side-menu-text:hover {
+  color: #171433;
+}
+
 @media only screen and (min-width: 786px) {
   .project-title {
     width: 100%;
