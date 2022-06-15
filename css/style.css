@@ -947,7 +947,6 @@ footer h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  height: 70vh;
   width: 100%;
 }
 
@@ -1514,10 +1513,17 @@ footer h6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    padding-top: 6rem;
+    height: 100%;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .home .home-logo-card {
     -webkit-box-flex: 0;
@@ -1528,6 +1534,17 @@ footer h6 {
     text-align: left;
     width: 80%;
     margin: auto;
+    padding-top: 3rem;
+  }
+  .home .home-title .secondary-title-container {
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .home .home-title .secondary-title {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    line-height: 150%;
+    font-weight: 600;
+    letter-spacing: -1px;
   }
   .home .h1-container {
     position: relative;
@@ -1540,16 +1557,6 @@ footer h6 {
   .home .h1-container .outline-text {
     font-size: 3rem;
     font-size: clamp(3rem, 6vw, 4rem);
-  }
-  .home .secondary-title-container {
-    padding: 1rem 0;
-    width: 80%;
-  }
-  .home .secondary-title {
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    line-height: 150%;
-    font-weight: 600;
-    letter-spacing: -1px;
   }
   .home .contact-link-container {
     display: none;
@@ -1727,6 +1734,16 @@ footer h6 {
     padding-top: 0;
     padding-left: 2rem;
   }
+  .home .home-title .secondary-title-container {
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .home .home-title .secondary-title {
+    font-size: clamp(1.6rem, 2vw, 2.3rem);
+    line-height: 150%;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
   .home .h1-container {
     position: relative;
     width: 80%;
@@ -1736,16 +1753,6 @@ footer h6 {
   }
   .home .h1-container .outline-text {
     font-size: clamp(4rem, 6vw, 6rem);
-  }
-  .home .secondary-title-container {
-    padding: 1rem 0;
-    width: 80%;
-  }
-  .home .secondary-title {
-    font-size: clamp(1.6rem, 2vw, 2.3rem);
-    line-height: 150%;
-    font-weight: 600;
-    letter-spacing: -1px;
   }
   .home .contact-link-container {
     display: none;
