@@ -818,6 +818,20 @@ $ani-delay: 1s;
                 pointer-events: none;
             }
         }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba($color: #000000, $alpha: 0.3);
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba($color: #ffffff, $alpha: 0.2);
+        }
     }
     .talk-container{
         display: flex;
