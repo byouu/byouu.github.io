@@ -486,7 +486,7 @@ $ani-delay: 1s;
         padding-top: 5rem;
         .project-grid-item{
             flex: 0 0 100%;
-            padding-bottom: 4rem;
+            margin-bottom: 4rem;
             display: flex;
             flex-direction: column;
             img{
@@ -616,9 +616,10 @@ $ani-delay: 1s;
 }
 
 .talk-container{
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
     background-color: $dark-navy;
     h3{
+        text-align: center;
         font-weight: 500;
         color: $light1;
         font-size: clamp(2rem, 6vw, 6rem);
@@ -752,7 +753,7 @@ $ani-delay: 1s;
             padding-left: 4rem;
             .project-grid-item{
                 flex: 0 0 50%;
-                padding-bottom: 4rem;
+                margin-bottom: 4rem;
                 .project-title-wrap{
                     display: flex;
                     padding: 2rem 0;
@@ -804,13 +805,17 @@ $ani-delay: 1s;
             font-size: 1.6rem;
         }
         .archive-container{
+            border: thin solid red;
             display: flex;
-            justify-content: flex-end;
-            max-width: 100%;
-            padding-left: 4rem;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
             .archive-item{
                 // height: 15rem;
                 width: 33.33%;
+                min-width: 30rem;
+                pointer-events: none;
             }
         }
     }
@@ -911,7 +916,7 @@ $ani-delay: 1s;
             padding-bottom: 4rem;
             .project-grid-item{
                 flex: 0 0 50%;
-                padding-bottom: 6rem;
+                margin-bottom: 6rem;
                 .project-title-wrap{
                     display: flex;
                     padding: 2rem 0;
@@ -964,17 +969,19 @@ $ani-delay: 1s;
         .sub-title{
             font-size: 1.6rem;
         }
-        .archive-container{
-            display: flex;
-            justify-content: flex-end;
-            max-width: 100%;
-            padding-left: 0;
-            // margin-left: 10rem;
-            .archive-item{
-                height: 31rem;
-                width: 33.33%;
-            }
-        }
+        // .archive-container{
+        //     display: flex;
+        //     justify-content: flex-end;
+        //     // max-width: 100%;
+        //     padding-left: 0;
+        //     // margin-left: 10rem;
+        //     // width: ;
+        //     width: 100%;
+        //     .archive-item{
+        //         height: 31rem;
+        //         width: 33.33%;
+        //     }
+        // }
     }
     .talk-container{
         display: flex;
