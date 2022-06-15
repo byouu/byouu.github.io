@@ -254,6 +254,7 @@ $ani-delay: 1s;
     .home-title-card{
         flex: 1 0 50%;
         height: 80vh;
+        min-height: 38rem;
         position: relative;
     }
     .home-title{
@@ -264,6 +265,20 @@ $ani-delay: 1s;
         justify-content: center;
         align-items: center;
         padding-top: 6rem;
+        // min-height: 50rem;
+        .secondary-title-container{
+            padding: 1rem 0;
+        }
+        .secondary-title{
+            font-size: 1.3rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
+            line-height: 150%;
+            // color: black;
+            // border: thin solid black;
+            // font-weight: 500;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
     }
     h1{
         font-size: 6.5em;
@@ -306,19 +321,6 @@ $ani-delay: 1s;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: $navy;
             z-index: 10;
-        }
-        .secondary-title-container{
-            padding: 1rem 0;
-        }
-        .secondary-title{
-            font-size: 1.3rem;
-            font-size: clamp(1.3rem, 5vw, 1.8rem);
-            line-height: 150%;
-            // color: black;
-            // border: thin solid black;
-            // font-weight: 500;
-            font-weight: 600;
-            letter-spacing: -1px;
         }
     }
     .contact-link-container{

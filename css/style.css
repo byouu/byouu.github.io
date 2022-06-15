@@ -982,6 +982,7 @@ footer h6 {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   height: 80vh;
+  min-height: 38rem;
   position: relative;
 }
 
@@ -1000,6 +1001,18 @@ footer h6 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 6rem;
+}
+
+.home .home-title .secondary-title-container {
+  padding: 1rem 0;
+}
+
+.home .home-title .secondary-title {
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 5vw, 1.8rem);
+  line-height: 150%;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .home h1 {
@@ -1047,18 +1060,6 @@ footer h6 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #151635;
   z-index: 10;
-}
-
-.home .h1-container .secondary-title-container {
-  padding: 1rem 0;
-}
-
-.home .h1-container .secondary-title {
-  font-size: 1.3rem;
-  font-size: clamp(1.3rem, 5vw, 1.8rem);
-  line-height: 150%;
-  font-weight: 600;
-  letter-spacing: -1px;
 }
 
 .home .contact-link-container {

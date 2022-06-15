@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.logo-light{
+    display: block !important;
+}
+
+.nav-logo-container{
+    background-color: $navy !important;
+}
+
 .project-wrap{
     display: flex;
     flex-direction: column;
@@ -19,7 +27,7 @@
         font-family: $manrope;
         text-transform: none;
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 2.8rem;
         padding: 0;
         width: 100%;
     }

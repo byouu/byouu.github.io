@@ -669,6 +669,14 @@ footer h6 {
   position: relative;
 }
 
+.logo-light {
+  display: block !important;
+}
+
+.nav-logo-container {
+  background-color: #151635 !important;
+}
+
 .project-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,7 +702,7 @@ footer h6 {
   font-family: "Manrope", sans-serif;
   text-transform: none;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding: 0;
   width: 100%;
 }
