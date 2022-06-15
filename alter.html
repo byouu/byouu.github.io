@@ -21,21 +21,20 @@
 <!-- <body onload="cb.init.init();"> -->
 <body>
     <div class="wrap">
-        <nav class="nav">
-            <div class="nav-bar">
+        <nav class="nav" id="nav">
+            <div class="nav-bar dark-nav">
                 <div class="nav-logo">
                     <a href="/">
                         <div class="nav-logo-container">
-                            <img src="/images/logo.svg" alt="logo">
+                            <img src="/images/light-logo-svg.svg" alt="logo" class="logo-light">
+                            <img src="/images/dark-logo-svg.svg" alt="logo" class="logo-dark">
                         </div>
                     </a>
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="/"><h3>Home</h3></a></li>
-                    <li class="nav-item"><a href="/#about"><h3>About</h3></a></li>
                     <li class="nav-item dropdown">
-                        <a href="/#projects">
-                            <h3 class="">Projects</h3>
+                        <a class="nav-link" href="/#projects">
+                            <h3 class="nav-link-text">Projects</h3>
                         </a>
                         <div class="dropdown-menu">
                             <a href="/project-cb.html">
@@ -52,20 +51,44 @@
                             </a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="/#contact"><h3>Contact</h3></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">
+                            <h3 class="nav-link-text">About</h3>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
+        <div class="side-links">
+            <a href="mailto:bradyoung109@gmail.com">
+                <i class="far fa-envelope side-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bradley-young-56bbb218a/">
+                <i class="fab fa-linkedin-in side-icon"></i>
+            </a>
+            <a href="https://github.com/byouu">
+                <i class="fab fa-github side-icon"></i>
+            </a>
+        </div>
+
+        <div class="scroll-top-side">
+            <div class="scroll-top-elements">
+                <h4>Scroll top</h4>
+                <div class="scroll-shape-thin"></div>
+                <div class="scroll-shape-thick"></div>
+            </div>
+        </div>
+
         <div class="section project">
             <div class="project-wrap section-wrap">
+                <div class="side-menu-container">
+                    <button class="back-btn"><a href="/">
+                        <h2><-</h2>
+                    </a></button>
+                </div>
                 <div class="project-title">
-                    <div class="project-num">
-                        <div class="box"></div>
-                        <div class="small-box"></div>
-                        <div class="num"><h2>02</h2></div>
-                    </div>
-                    <h1>Alter App</h1>
+                    <h1>02. Alter App</h1>
                 </div>
                 <div class="content-wrap">
                     <div class="main-content">
@@ -122,6 +145,8 @@
     </div>
 
     <!-- <script src="js/index.js"></script> -->
+    <script src="js/project.js"></script>
+    <script src="js/global.js"></script>
     <script src="js/medium-zoom.js"></script>
     <script src="js/img-zoom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>

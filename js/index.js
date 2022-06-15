@@ -44,7 +44,7 @@ home.init.attachListeners = () => {
     home.elem.scrollBtn.addEventListener("click", home.event.scrollDown);
     // home.elem.scrollBtnBottom.addEventListener("click", home.event.scrollUp);
 	window.addEventListener("scroll", home.event.showNav);
-	home.elem.talkBtn.addEventListener("click", home.event.scrollTalk);
+	// home.elem.talkBtn.addEventListener("click", home.event.scrollTalk);
 };
 
 home.event.scrollDown = () => {
@@ -54,16 +54,16 @@ home.event.scrollUp = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-home.event.showNav = () => {
-	var y = window.scrollY;
-	if (y >= 700) {
-	  	home.elem.nav.className = "nav"
-		console.log(scrollY)
-	}
-	 else {
-		home.elem.nav.className = "hide"
-	}
-};
+// home.event.showNav = () => {
+// 	var y = window.scrollY;
+// 	if (y >= 700) {
+// 	  	home.elem.nav.className = "nav"
+// 		console.log(scrollY)
+// 	}
+// 	 else {
+// 		home.elem.nav.className = "hide"
+// 	}
+// };
 
 home.event.scrollTalk = () => {
     home.elem.contact.scrollIntoView({behavior: "smooth", block: "center"});
