@@ -1645,7 +1645,6 @@ footer h6 {
     font-size: 1.6rem;
   }
   .archive .archive-container {
-    border: thin solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
