@@ -52,7 +52,7 @@ lightMode = () => {
             icon.classList.remove('light-icon');
         }
     }
-    console.log(sideLinks)
+    // console.log(sideLinks)
 }
 
 window.addEventListener('scroll', lightMode)
