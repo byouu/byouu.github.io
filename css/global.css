@@ -19,7 +19,7 @@ body {
   font-weight: normal;
   list-style-type: none;
   text-decoration: none;
-  color: #171433;
+  color: #151635;
 }
 
 .wrap {
@@ -87,13 +87,13 @@ nav {
 }
 
 .nav-item:hover h3 {
-  color: #171433;
+  color: #151635;
 }
 
 .nav-logo-container {
   max-width: 3rem;
   padding: 1rem;
-  border: thin solid #171433;
+  background-color: #ffff;
 }
 
 .nav-logo-container img {
@@ -147,7 +147,7 @@ nav {
 }
 
 .active {
-  color: #171433 !important;
+  color: #151635 !important;
 }
 
 .section {
@@ -162,7 +162,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: #171433;
+  color: #151635;
 }
 
 h1, h2, h3 {
@@ -199,7 +199,7 @@ a {
 }
 
 .linkBtn {
-  background-color: #171433;
+  background-color: #151635;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +233,7 @@ a {
 
 .hoz-line {
   min-width: 2em;
-  border: thin solid #171433;
+  border: thin solid #151635;
 }
 
 .nav {
@@ -241,12 +241,12 @@ a {
 }
 
 .outline-shape {
-  border: thin solid #171433;
+  border: thin solid #151635;
 }
 
 .fill-shape {
-  background-color: #171433;
-  border: thin solid #171433;
+  background-color: #151635;
+  border: thin solid #151635;
 }
 
 .fill-shape-red {
@@ -255,7 +255,7 @@ a {
 }
 
 .outline-fill-shape-red {
-  border: thin solid #171433;
+  border: thin solid #151635;
   background-color: #CE5F15;
 }
 
@@ -293,14 +293,14 @@ a {
     color: #CDCDCD;
   }
   .side-menu .active {
-    color: #171433;
+    color: #151635;
   }
   .side-menu .side-menu-text {
     -webkit-transition: color ease 0.3s;
     transition: color ease 0.3s;
   }
   .side-menu .side-menu-text:hover {
-    color: #171433;
+    color: #151635;
   }
 }
 /*# sourceMappingURL=global.css.map */
