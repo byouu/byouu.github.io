@@ -14,7 +14,7 @@ let home = {
         about: document.querySelector('.about'),
         portfolioPreview: document.querySelector('.portfolio'),
 		nav: document.querySelector('.nav'),
-		talkBtn: document.querySelector('.lets-talk-btn'),
+		// talkBtn: document.querySelector('.lets-talk-btn'),
 		contact: document.querySelector('#contact')
 	},
 
