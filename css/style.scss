@@ -559,7 +559,7 @@ $ani-delay: 1s;
                 }
                 p{
                     width: 60%;
-                    font-size: 1.4rem;
+                    font-size: 0.9rem;
                     color: $light1;
                 }
             }
@@ -794,8 +794,12 @@ $ani-delay: 1s;
                         background-color: $red;
                     }
                 }
+                .project-desc{
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
             }
-    
         }
     }
     .archive{
