@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
 @font-face {
   font-family: "Akira";
   src: url("../fonts/AkiraExpanded-SuperBold.woff") format("woff"), url("../fonts/AkiraExpanded-SuperBold.woff2") format("woff2");
@@ -332,8 +333,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-family: 'Akira';
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2, h3, h4 {
@@ -664,24 +666,8 @@ footer h6 {
   }
 }
 
-.wrap {
-  background-color: #CE5F15;
-}
-
 h1, h2, h3, h4, h5, h6, p {
-  color: #ffff;
-}
-
-.logo-light {
-  display: none !important;
-}
-
-.logo-dark {
-  display: block !important;
-}
-
-.nav-logo-container {
-  background-color: #ffff !important;
+  color: #151635;
 }
 
 .about {
@@ -754,12 +740,20 @@ h1, h2, h3, h4, h5, h6, p {
       align-self: flex-start;
 }
 
+.scroll-top-elements h4 {
+  color: #ffff;
+}
+
 .scroll-shape-thick {
-  background: #151635 !important;
+  background: #ffff !important;
 }
 
 .scroll-shape-thin {
   background: #ffff !important;
+}
+
+.cv {
+  padding-bottom: 5rem;
 }
 
 .cv .cv-text-container {
@@ -845,12 +839,21 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: #060828;
 }
 
 .back-home h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2rem;
+  color: #ffff;
+  -webkit-transition: ease transform 0.2s, ease color 0.2s;
+  transition: ease transform 0.2s, ease color 0.2s;
+}
+
+.back-home h2:hover {
+  -webkit-transform: translateX(-0.4rem);
+          transform: translateX(-0.4rem);
+  color: #CE5F15;
 }
 
 @media only screen and (min-width: 786px) {
@@ -952,7 +955,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0 4rem;
   }
   .side-links i {
-    color: #ffff !important;
+    color: #151635 !important;
   }
   .about {
     min-height: 80vh;
@@ -961,7 +964,7 @@ h1, h2, h3, h4, h5, h6, p {
   .about h1 {
     font-weight: 600;
     position: absolute;
-    top: 12rem;
+    top: 6rem;
     left: 35%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -974,7 +977,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 55%;
   }
   .about .about-caption-container {
-    top: 30rem;
+    top: 24rem;
     left: 38%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

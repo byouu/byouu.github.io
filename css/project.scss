@@ -166,7 +166,12 @@
 
 .side-menu-container{
     display: none;
-  }
+}
+
+.scroll-top-side{
+    position: absolute;
+    bottom: 22rem;
+}
 
 @media only screen and (min-width: 786px) {
     .project-title{

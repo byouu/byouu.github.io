@@ -14,11 +14,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
+
 $akira: 'Akira';
 $mont: 'Montserrat', sans-serif;
 $inter: 'Inter', sans-serif;
 $manrope: 'Manrope', sans-serif;
 $syne: 'Syne', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
 
 $navy:#151635;
 $dark-navy:#060828;
@@ -262,8 +265,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 h1{
-  font-family: 'Akira';
+  // font-family: 'Akira';
+  font-family: $josefin;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2,h3, h4{

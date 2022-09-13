@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
 @font-face {
   font-family: "Akira";
   src: url("../fonts/AkiraExpanded-SuperBold.woff") format("woff"), url("../fonts/AkiraExpanded-SuperBold.woff2") format("woff2");
@@ -332,8 +333,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-family: 'Akira';
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2, h3, h4 {
@@ -881,6 +883,11 @@ footer h6 {
 
 .side-menu-container {
   display: none;
+}
+
+.scroll-top-side {
+  position: absolute;
+  bottom: 22rem;
 }
 
 @media only screen and (min-width: 786px) {

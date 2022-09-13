@@ -889,7 +889,8 @@ $ani-delay: 1s;
             }
             .secondary-title{
                 // font-size: 1.8rem;
-                font-size: clamp(1.6rem, 2vw, 2.3rem);
+                // font-size: clamp(1.6rem, 2vw, 2.3rem);
+                font-size: clamp(1.3rem, 2vw, 2rem);
                 line-height: 150%;
                 font-weight: 600;
                 letter-spacing: -1px;
@@ -900,11 +901,11 @@ $ani-delay: 1s;
             width: 80%;
             .main-text{
                 // font-size: 3rem;
-                font-size: clamp(4rem, 6vw, 6rem);
+                font-size: clamp(5rem, 7vw, 7rem);
             }
             .outline-text{
                 // font-size: 3rem;
-                font-size: clamp(4rem, 6vw, 6rem);
+                font-size: clamp(5rem, 7vw, 7rem);
             }
         }
         .contact-link-container{

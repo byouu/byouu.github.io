@@ -1,22 +1,22 @@
 @import "_global.scss";
 
-.wrap{
-    background-color: $red;
-}
+// .wrap{
+//     background-color: $red;
+// }
 h1,h2,h3,h4,h5,h6,p{
-    color: $light1;
+    color: $navy;
 }
 
-.logo-light{
-    display: none !important;
-}
-.logo-dark{
-    display: block !important;
-}
+// .logo-light{
+//     display: none !important;
+// }
+// .logo-dark{
+//     display: block !important;
+// }
 
-.nav-logo-container{
-    background-color: $light1 !important;
-}
+// .nav-logo-container{
+//     background-color: $light1 !important;
+// }
 
 .about{
     padding: 6rem 0;
@@ -73,14 +73,21 @@ h1,h2,h3,h4,h5,h6,p{
     }
 }
 
+.scroll-top-elements{
+    h4{
+        color: $light1;
+    }
+}
+
 .scroll-shape-thick{
-    background: $navy !important;
+    background: $light1 !important;
 }
 .scroll-shape-thin{
     background: $light1 !important;
 }
 
 .cv{
+    padding-bottom: 5rem;
     .cv-text-container{
         padding-bottom: 1rem;
         .cv-text-content-wrap{
@@ -148,10 +155,17 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
-    background: rgba($color: #000000, $alpha: 0.1);
+    // background: rgba($color: #000000, $alpha: 0.1);
+    background: #060828;
     h2{
-        font-weight: 600;
+        font-weight: 400;
         font-size: 2rem;
+        color: $light1;
+        transition: ease transform 0.2s, ease color 0.2s;
+        &:hover{
+            transform: translateX(-0.4rem);
+            color: $red;
+        }
     }
 }
 
@@ -253,7 +267,7 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .side-links{
         i{
-            color: $light1 !important;
+            color: $navy !important;
         }
     }
     .about{
@@ -262,7 +276,7 @@ h1,h2,h3,h4,h5,h6,p{
         h1{
             font-weight: 600;
             position: absolute;
-            top: 12rem;
+            top: 6rem;
             left: 35%;
             transform: translateX(-50%);
             font-size: 8rem;
@@ -274,7 +288,7 @@ h1,h2,h3,h4,h5,h6,p{
             left: 55%;
         }
         .about-caption-container{
-            top: 30rem;
+            top: 24rem;
             left: 38%;
             transform: translateX(-50%);
             max-width: 40rem;
