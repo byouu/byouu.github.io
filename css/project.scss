@@ -82,16 +82,16 @@
 }
 
 .text-section{
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     width: 100%;
     .title{
         padding-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     p{
-        padding: 1rem 0;
+        padding: 0 0 1.5rem 0;
         // font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     img{
         width: 100%;
@@ -122,6 +122,10 @@
         margin-top: 0.7rem;
         height: 0.5rem;
         width: 0.5rem;
+    }
+    h3{
+        line-height: 180%;
+        padding: 1.5rem 0;
     }
 }
 
@@ -255,7 +259,7 @@
         max-width: 80rem;
         // text-align: right;
         h1{
-            font-size: 5.5rem;
+            font-size: 4.5rem;
             width: 100%;
             margin-top: 0;
         }

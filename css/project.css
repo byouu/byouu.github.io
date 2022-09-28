@@ -790,18 +790,18 @@ footer h6 {
 }
 
 .text-section {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
 .text-section .title {
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .text-section p {
-  padding: 1rem 0;
-  font-size: 1.1rem;
+  padding: 0 0 1.5rem 0;
+  font-size: 1rem;
 }
 
 .text-section img {
@@ -839,6 +839,11 @@ footer h6 {
   margin-top: 0.7rem;
   height: 0.5rem;
   width: 0.5rem;
+}
+
+.text-section h3 {
+  line-height: 180%;
+  padding: 1.5rem 0;
 }
 
 .link-btn {
@@ -977,7 +982,7 @@ footer h6 {
     max-width: 80rem;
   }
   .project-title h1 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     width: 100%;
     margin-top: 0;
   }
