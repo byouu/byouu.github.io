@@ -25,8 +25,9 @@ $josefin: 'Josefin Sans', sans-serif;
 
 $navy:#151635;
 $dark-navy:#060828;
+$darkest-navy:#040521;
 $light1:#ffff;
-$red:#CE5F15;
+$red:#CE3615;
 $gray: #CDCDCD;
 
 * {
@@ -447,13 +448,13 @@ footer{
 
 @media only screen and (min-width: 786px) {
   .logo-dark{
-    display: none;
+    display: block;
   }
   .logo-light{
-      display: block;
+      display: none;
   }
   .nav-logo-container{
-      background-color: $navy;
+      background-color: $light1;
   }
   .nav{
     display: flex;
@@ -464,7 +465,7 @@ footer{
   }
   .nav-bar{
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
   }
   .section-wrap{
     padding: 4rem;
@@ -492,6 +493,10 @@ footer{
 @media only screen and (min-width: 1200px) {
   .section-wrap{
       padding: 5rem 10rem;
+  }
+  .nav-bar{
+    width: 100%;
+    padding: 1rem 4rem;
   }
   .side-links{
     position: fixed;

@@ -1,5 +1,17 @@
 // Banner button scroll
-var scrollBtn = document.querySelector('#down-arrow');
+// var scrollBtn = document.querySelector('#down-arrow');
+// // var scrollBtnBottom = document.querySelector('#scroll-btn-bottom');
+
+// function scrollDown(){
+//     document.querySelector('#projects').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+// }
+
+// scrollBtn.addEventListener('click', function(){
+//     scrollDown();
+// });
+
+// Banner button scroll
+var scrollBtn = document.querySelector('#scroll-btn');
 // var scrollBtnBottom = document.querySelector('#scroll-btn-bottom');
 
 function scrollDown(){

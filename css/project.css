@@ -122,7 +122,7 @@ nav {
 
 .nav-item .nav-link:hover ::after {
   width: 60%;
-  background-color: #CE5F15;
+  background-color: #CE3615;
 }
 
 .nav-logo-container {
@@ -280,7 +280,7 @@ nav {
 }
 
 .dropdown .dropdown-menu a h3:hover {
-  color: #CE5F15;
+  color: #CE3615;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -290,7 +290,7 @@ nav {
 
 .dropdown:hover .nav-link ::after {
   width: 60%;
-  background-color: #CE5F15;
+  background-color: #CE3615;
 }
 
 .dark-nav .logo-dark {
@@ -310,7 +310,7 @@ nav {
 }
 
 .dark-nav .dropdown .dropdown-menu a h3:hover {
-  color: #CE5F15;
+  color: #CE3615;
 }
 
 .active {
@@ -386,13 +386,13 @@ a {
 }
 
 .fill-shape-red {
-  background-color: #CE5F15;
-  border: thin solid #CE5F15;
+  background-color: #CE3615;
+  border: thin solid #CE3615;
 }
 
 .outline-fill-shape-red {
   border: thin solid #151635;
-  background-color: #CE5F15;
+  background-color: #CE3615;
 }
 
 .side-links {
@@ -448,7 +448,7 @@ a {
   right: 0;
   height: 3rem;
   width: 0.5rem;
-  background-color: #CE5F15;
+  background-color: #CE3615;
   -webkit-transition: bottom ease 0.3s, height ease 0.2s;
   transition: bottom ease 0.3s, height ease 0.2s;
 }
@@ -514,7 +514,7 @@ footer a {
 }
 
 footer a:hover i, footer a:hover h5 {
-  color: #CE5F15;
+  color: #CE3615;
 }
 
 footer a i {
@@ -571,13 +571,13 @@ footer h6 {
 
 @media only screen and (min-width: 786px) {
   .logo-dark {
-    display: none;
-  }
-  .logo-light {
     display: block;
   }
+  .logo-light {
+    display: none;
+  }
   .nav-logo-container {
-    background-color: #151635;
+    background-color: #ffff;
   }
   .nav {
     display: -webkit-box;
@@ -589,7 +589,7 @@ footer h6 {
   }
   .nav-bar {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
   }
   .section-wrap {
     padding: 4rem;
@@ -616,6 +616,10 @@ footer h6 {
   .section-wrap {
     padding: 5rem 10rem;
   }
+  .nav-bar {
+    width: 100%;
+    padding: 1rem 4rem;
+  }
   .side-links {
     position: fixed;
     z-index: 100;
@@ -641,7 +645,7 @@ footer h6 {
     transition: color ease 0.3s;
   }
   .side-links a:hover i {
-    color: #CE5F15;
+    color: #CE3615;
   }
   .side-links .line-container {
     position: relative;
@@ -661,7 +665,7 @@ footer h6 {
     width: 0.3rem;
     bottom: 0;
     left: 0.1rem;
-    background: #CE5F15;
+    background: #CE3615;
     z-index: 900;
   }
 }
@@ -835,7 +839,7 @@ footer h6 {
 }
 
 .text-section .box {
-  background-color: #CE5F15;
+  background-color: #CE3615;
   margin-top: 0.7rem;
   height: 0.5rem;
   width: 0.5rem;
@@ -857,7 +861,7 @@ footer h6 {
 }
 
 .link-btn h2:hover {
-  color: #CE5F15;
+  color: #CE3615;
 }
 
 .goals .title {
@@ -917,7 +921,7 @@ footer h6 {
   }
   .project-num .small-box {
     position: absolute;
-    background-color: #CE5F15;
+    background-color: #CE3615;
     height: 2rem;
     width: 2rem;
     z-index: 9;
