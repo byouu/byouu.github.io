@@ -674,6 +674,18 @@ h1, h2, h3, h4, h5, h6, p {
   color: #151635;
 }
 
+.logo-light {
+  display: block !important;
+}
+
+.logo-dark {
+  display: none !important;
+}
+
+.nav-logo-container {
+  background-color: #151635 !important;
+}
+
 .about {
   padding: 6rem 0;
   position: relative;

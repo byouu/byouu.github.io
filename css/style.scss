@@ -849,14 +849,14 @@ $ani-delay: 1s;
         }
         .archive-container{
             display: flex;
-            white-space: nowrap;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
+            // white-space: nowrap;
+            // overflow-x: scroll;
+            // overflow-y: hidden;
+            // white-space: nowrap;
             .archive-item{
                 // height: 15rem;
-                width: 33.33%;
-                min-width: 30rem;
+                width: 25%;
+                min-width: 15rem;
                 pointer-events: none;
             }
         }

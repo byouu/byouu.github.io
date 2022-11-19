@@ -1668,14 +1668,10 @@ footer h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
   }
   .archive .archive-container .archive-item {
-    width: 33.33%;
-    min-width: 30rem;
+    width: 25%;
+    min-width: 15rem;
     pointer-events: none;
   }
   .archive ::-webkit-scrollbar {

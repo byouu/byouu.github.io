@@ -7,16 +7,16 @@ h1,h2,h3,h4,h5,h6,p{
     color: $navy;
 }
 
-// .logo-light{
-//     display: none !important;
-// }
-// .logo-dark{
-//     display: block !important;
-// }
+.logo-light{
+    display: block !important;
+}
+.logo-dark{
+    display: none!important;
+}
 
-// .nav-logo-container{
-//     background-color: $light1 !important;
-// }
+.nav-logo-container{
+    background-color: $navy !important;
+}
 
 .about{
     padding: 6rem 0;

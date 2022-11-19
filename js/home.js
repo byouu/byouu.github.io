@@ -59,10 +59,10 @@ window.addEventListener('scroll', showLines)
 
 
 // Horizontal archive scroll
-let scrollContainer = document.querySelector(".archive-container");
+// let scrollContainer = document.querySelector(".archive-container");
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+// scrollContainer.addEventListener("wheel", (evt) => {
+//     evt.preventDefault();
+//     scrollContainer.scrollLeft += evt.deltaY;
+// });
   
