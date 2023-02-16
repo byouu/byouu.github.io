@@ -896,7 +896,7 @@ footer h6 {
 
 .scroll-top-side {
   position: absolute;
-  bottom: 22rem;
+  bottom: 20rem;
 }
 
 @media only screen and (min-width: 786px) {
@@ -944,10 +944,10 @@ footer h6 {
     left: 50%;
     -webkit-transform: translateX(-41rem);
             transform: translateX(-41rem);
-    top: 12rem;
+    top: 11rem;
   }
   .side-menu-container .back-btn {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     background-color: transparent;
     -webkit-transition: -webkit-transform ease 0.2s;
     transition: -webkit-transform ease 0.2s;
@@ -964,11 +964,13 @@ footer h6 {
   }
   .side-menu-container li {
     cursor: pointer;
+    margin-bottom: 1rem;
   }
   .side-menu-container h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     line-height: 150%;
     color: #CDCDCD;
+    font-size: 1.1rem;
   }
   .side-menu-container .active {
     color: #151635;

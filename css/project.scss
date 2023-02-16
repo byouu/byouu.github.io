@@ -174,7 +174,7 @@
 
 .scroll-top-side{
     position: absolute;
-    bottom: 22rem;
+    bottom: 20rem;
 }
 
 @media only screen and (min-width: 786px) {
@@ -220,9 +220,11 @@
         display: block;
         left: 50%;
         transform: translateX(-41rem);
-        top: 12rem;
+        top: 11rem;
+        // background-color: $light1;
+        // border: thin solid red;
         .back-btn{
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
             background-color: transparent;
             transition: transform ease 0.2s;
             h2{
@@ -235,11 +237,13 @@
         }
         li{
           cursor: pointer;
+          margin-bottom: 1rem;
         }
         h3{
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             line-height: 150%;
             color: $gray;
+            font-size: 1.1rem;
         }
         .active{
             color: $navy;
@@ -251,8 +255,6 @@
           }
         }
       }
-
-      
     .project-title{
         width: 100%;
         padding-left: 20rem;
@@ -264,4 +266,9 @@
             margin-top: 0;
         }
     }
+
+
+
+
+    
 }

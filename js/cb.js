@@ -1,142 +1,142 @@
-// ==================================================================
-// VARIABLES
-// ==================================================================
+// // ==================================================================
+// // VARIABLES
+// // ==================================================================
 
-let cb = {
-	init: {
-		attachListeners: undefined,
-		init: undefined,
-	},
+// let cb = {
+// 	init: {
+// 		attachListeners: undefined,
+// 		init: undefined,
+// 	},
 
-	elem: {
-		webSection: document.querySelector('#website'),
-		brandSection: document.querySelector('#branding'),
-		threedSection: document.querySelector('#threed'),
-		illusSection: document.querySelector('#illus'),
+// 	elem: {
+// 		webSection: document.querySelector('#website'),
+// 		brandSection: document.querySelector('#branding'),
+// 		threedSection: document.querySelector('#threed'),
+// 		illusSection: document.querySelector('#illus'),
 
-		webBtn: document.querySelector('#websiteBtn'),
-		brandBtn: document.querySelector('#brandingBtn'),
-		threedBtn: document.querySelector('#threedBtn'),
-		illusBtn: document.querySelector('#illusBtn'),
+// 		webBtn: document.querySelector('#websiteBtn'),
+// 		brandBtn: document.querySelector('#brandingBtn'),
+// 		threedBtn: document.querySelector('#threedBtn'),
+// 		illusBtn: document.querySelector('#illusBtn'),
 
-		websiteBtnTitle: document.querySelector('#websiteBtnTitle'),
-		brandingBtnTitle: document.querySelector('#brandingBtnTitle'),
-		threedBtnTitle: document.querySelector('#threedBtnTitle'),
-		illusBtnTitle: document.querySelector('#illusBtnTitle'),
-	},
+// 		websiteBtnTitle: document.querySelector('#websiteBtnTitle'),
+// 		brandingBtnTitle: document.querySelector('#brandingBtnTitle'),
+// 		threedBtnTitle: document.querySelector('#threedBtnTitle'),
+// 		illusBtnTitle: document.querySelector('#illusBtnTitle'),
+// 	},
 
-	event: {
-		showWeb: undefined,
-		showPlat: undefined,
-		showBrand:  undefined,
-		show3D: undefined,
-		showIllus: undefined,
-	},
-};
+// 	event: {
+// 		showWeb: undefined,
+// 		showPlat: undefined,
+// 		showBrand:  undefined,
+// 		show3D: undefined,
+// 		showIllus: undefined,
+// 	},
+// };
 
-// ==================================================================
-// FUNCTIONS
-// ==================================================================
+// // ==================================================================
+// // FUNCTIONS
+// // ==================================================================
 
-// @func  cb.initialise
-// @desc
-cb.init.init = () => {
-	cb.init.attachListeners();
-};
+// // @func  cb.initialise
+// // @desc
+// cb.init.init = () => {
+// 	cb.init.attachListeners();
+// };
 
-cb.init.attachListeners = () => {
-	window.addEventListener("scroll", cb.event.showNav);
-	cb.elem.webBtn.addEventListener("click", cb.event.showWeb);
-	cb.elem.brandBtn.addEventListener("click", cb.event.showBrand);
-	cb.elem.threedBtn.addEventListener("click", cb.event.show3D);
-	cb.elem.illusBtn.addEventListener("click", cb.event.showIllus);
-};
+// cb.init.attachListeners = () => {
+// 	window.addEventListener("scroll", cb.event.showNav);
+// 	cb.elem.webBtn.addEventListener("click", cb.event.showWeb);
+// 	cb.elem.brandBtn.addEventListener("click", cb.event.showBrand);
+// 	cb.elem.threedBtn.addEventListener("click", cb.event.show3D);
+// 	cb.elem.illusBtn.addEventListener("click", cb.event.showIllus);
+// };
 
-cb.event.showWeb = () => {
-	cb.elem.webSection.className = "content-wrap"
-	cb.elem.brandSection.className = "hide"
-	cb.elem.threedSection.className = "hide"
-	cb.elem.illusSection.className = "hide"
-	cb.elem.websiteBtnTitle.className = "active"
-	cb.elem.brandingBtnTitle.className = "inactive"
-	cb.elem.threedBtnTitle.className = "inactive"
-	cb.elem.illusBtnTitle.className = "inactive"
-	document.documentElement.scrollTop = 0;
-};
-cb.event.showBrand = () => {
-	cb.elem.brandSection.className = "content-wrap"
-	cb.elem.webSection.className = "hide"
-	cb.elem.threedSection.className = "hide"
-	cb.elem.illusSection.className = "hide"
-	cb.elem.websiteBtnTitle.className = "inactive"
-	cb.elem.brandingBtnTitle.className = "active"
-	cb.elem.threedBtnTitle.className = "inactive"
-	cb.elem.illusBtnTitle.className = "inactive"
-	document.documentElement.scrollTop = 0;
-};
-cb.event.show3D = () => {
-	cb.elem.threedSection.className = "content-wrap"
-	cb.elem.webSection.className = "hide"
-	cb.elem.brandSection.className = "hide"
-	cb.elem.illusSection.className = "hide"
-	cb.elem.websiteBtnTitle.className = "inactive"
-	cb.elem.brandingBtnTitle.className = "inactive"
-	cb.elem.illusBtnTitle.className = "inactive"
-	cb.elem.threedBtnTitle.className = "active"
-	document.documentElement.scrollTop = 0;
-};
-cb.event.showIllus = () => {
-	cb.elem.illusSection.className = "content-wrap"
-	cb.elem.threedSection.className = "hide"
-	cb.elem.webSection.className = "hide"
-	cb.elem.brandSection.className = "hide"
-	cb.elem.websiteBtnTitle.className = "inactive"
-	cb.elem.brandingBtnTitle.className = "inactive"
-	cb.elem.threedBtnTitle.className = "inactive"
-	cb.elem.illusBtnTitle.className = "active"
-	document.documentElement.scrollTop = 0;
-};
+// cb.event.showWeb = () => {
+// 	cb.elem.webSection.className = "content-wrap"
+// 	cb.elem.brandSection.className = "hide"
+// 	cb.elem.threedSection.className = "hide"
+// 	cb.elem.illusSection.className = "hide"
+// 	cb.elem.websiteBtnTitle.className = "active"
+// 	cb.elem.brandingBtnTitle.className = "inactive"
+// 	cb.elem.threedBtnTitle.className = "inactive"
+// 	cb.elem.illusBtnTitle.className = "inactive"
+// 	document.documentElement.scrollTop = 0;
+// };
+// cb.event.showBrand = () => {
+// 	cb.elem.brandSection.className = "content-wrap"
+// 	cb.elem.webSection.className = "hide"
+// 	cb.elem.threedSection.className = "hide"
+// 	cb.elem.illusSection.className = "hide"
+// 	cb.elem.websiteBtnTitle.className = "inactive"
+// 	cb.elem.brandingBtnTitle.className = "active"
+// 	cb.elem.threedBtnTitle.className = "inactive"
+// 	cb.elem.illusBtnTitle.className = "inactive"
+// 	document.documentElement.scrollTop = 0;
+// };
+// cb.event.show3D = () => {
+// 	cb.elem.threedSection.className = "content-wrap"
+// 	cb.elem.webSection.className = "hide"
+// 	cb.elem.brandSection.className = "hide"
+// 	cb.elem.illusSection.className = "hide"
+// 	cb.elem.websiteBtnTitle.className = "inactive"
+// 	cb.elem.brandingBtnTitle.className = "inactive"
+// 	cb.elem.illusBtnTitle.className = "inactive"
+// 	cb.elem.threedBtnTitle.className = "active"
+// 	document.documentElement.scrollTop = 0;
+// };
+// cb.event.showIllus = () => {
+// 	cb.elem.illusSection.className = "content-wrap"
+// 	cb.elem.threedSection.className = "hide"
+// 	cb.elem.webSection.className = "hide"
+// 	cb.elem.brandSection.className = "hide"
+// 	cb.elem.websiteBtnTitle.className = "inactive"
+// 	cb.elem.brandingBtnTitle.className = "inactive"
+// 	cb.elem.threedBtnTitle.className = "inactive"
+// 	cb.elem.illusBtnTitle.className = "active"
+// 	document.documentElement.scrollTop = 0;
+// };
 
-// Nav menu
+// // Nav menu
 
-// let scrollpos = window.scrollY
-// const header = document.querySelector(".nav")
-// const header_height = header.offsetHeight
-// const navItem = document.querySelectorAll(".nav-item")
+// // let scrollpos = window.scrollY
+// // const header = document.querySelector(".nav")
+// // const header_height = header.offsetHeight
+// // const navItem = document.querySelectorAll(".nav-item")
 
-// function add_class_on_scroll(){
-//     document.querySelector('.portfolio').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+// // function add_class_on_scroll(){
+// //     document.querySelector('.portfolio').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 
-//     header.querySelector('.nav-item').classList.add('active')
-// }
+// //     header.querySelector('.nav-item').classList.add('active')
+// // }
 
-// function remove_class_on_scroll(){
-//     document.querySelector('.portfolio').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+// // function remove_class_on_scroll(){
+// //     document.querySelector('.portfolio').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 
-//     header.querySelector('.nav-item').classList.contains('active').remove('active')
-// }
+// //     header.querySelector('.nav-item').classList.contains('active').remove('active')
+// // }
 
-// window.addEventListener('scroll', function() { 
-//   scrollpos = window.scrollY;
+// // window.addEventListener('scroll', function() { 
+// //   scrollpos = window.scrollY;
 
-//   if (scrollpos >= header_height) { add_class_on_scroll() }
-//   else { remove_class_on_scroll() }
+// //   if (scrollpos >= header_height) { add_class_on_scroll() }
+// //   else { remove_class_on_scroll() }
 
-//   console.log(scrollpos)
-// })
+// //   console.log(scrollpos)
+// // })
 
-// let scrollpos = window.scrollY
-// const header = document.querySelector(".nav")
-// const header_height = header.offsetHeight
+// // let scrollpos = window.scrollY
+// // const header = document.querySelector(".nav")
+// // const header_height = header.offsetHeight
 
-// const add_class_on_scroll = () => header.classList.add("fade-in")
-// const remove_class_on_scroll = () => header.classList.remove("fade-in")
+// // const add_class_on_scroll = () => header.classList.add("fade-in")
+// // const remove_class_on_scroll = () => header.classList.remove("fade-in")
 
-// window.addEventListener('scroll', function() { 
-//   scrollpos = window.scrollY;
+// // window.addEventListener('scroll', function() { 
+// //   scrollpos = window.scrollY;
 
-//   if (scrollpos >= header_height) { add_class_on_scroll() }
-//   else { remove_class_on_scroll() }
+// //   if (scrollpos >= header_height) { add_class_on_scroll() }
+// //   else { remove_class_on_scroll() }
 
-//   console.log(scrollpos)
-// })
+// //   console.log(scrollpos)
+// // })
